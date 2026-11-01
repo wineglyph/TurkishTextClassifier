@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "text": "Siparişim kargoya verildiğinde SMS ile bilgilendirme yapılacak mı?",
+    "expected_label": "Soru",
+    "category_description": "Teslimat ve bildirim sorgusu"
+  },
+  {
+    "id": 2,
+    "text": "Ürünün kutusu paramparça geldi ve içindeki cam parça kırılmış, rezillik resmen!",
+    "expected_label": "Şikâyet",
+    "category_description": "Kusurlu ve hasarlı ürün şikayeti"
+  },
+  {
+    "id": 3,
+    "text": "Mobil uygulamaya gece modu seçeneği eklenirse karanlıkta gözü yormaz, çok iyi olur.",
+    "expected_label": "Öneri",
+    "category_description": "Kullanıcı arayüzü iyileştirme önerisi"
+  },
+  {
+    "id": 4,
+    "text": "Faturamda neden 150 TL ek kullanım bedeli yansıtıldığını öğrenebilir miyim?",
+    "expected_label": "Soru",
+    "category_description": "Fatura ve ücretlendirme sorusu"
+  },
+  {
+    "id": 5,
+    "text": "Müşteri hizmetlerine 40 dakikadır bağlanamıyorum, sürekli bant kaydı dönüyor.",
+    "expected_label": "Şikâyet",
+    "category_description": "Çağrı merkezi ve bekleme süresi şikayeti"
+  },
+  {
+    "id": 6,
+    "text": "Sık sipariş veren daimi müşteriler için kargo bedava aboneliği getirilmesini tavsiye ederim.",
+    "expected_label": "Öneri",
+    "category_description": "Sadakat ve abonelik programı önerisi"
+  },
+  {
+    "id": 7,
+    "text": "İade ettiğim pantolonun ücreti kredi kartıma ne zaman aktarılır acaba?",
+    "expected_label": "Soru",
+    "category_description": "İade süreci ve para transferi sorusu"
+  },
+  {
+    "id": 8,
+    "text": "Hesabımdan benim onayım olmadan iki defa para çekilmiş, acilen iadesini talep ediyorum.",
+    "expected_label": "Şikâyet",
+    "category_description": "Yetkisiz para çekimi şikayeti"
+  },
+  {
+    "id": 9,
+    "text": "Arama çubuğuna filtreleme ve fiyata göre sıralama özellikleri entegre edilmeli.",
+    "expected_label": "Öneri",
+    "category_description": "Arama ve navigasyon geliştirme önerisi"
+  },
+  {
+    "id": 10,
+    "text": "Yurtdışında telefonumu kullanırken internet paketim geçerli olacak mı?",
+    "expected_label": "Soru",
+    "category_description": "Roaming ve tarife kapsamı sorusu"
+  },
+  {
+    "id": 11,
+    "text": "Yemek tamamen buz gibi ve dökülmüş halde geldi, kesinlikle kabul etmiyorum.",
+    "expected_label": "Şikâyet",
+    "category_description": "Yemek teslimatı ve servis kalitesi şikayeti"
+  },
+  {
+    "id": 12,
+    "text": "Restorandaki menülerin yanına alerjen ve kalori bilgilerinin eklenmesi sağlık açısından faydalı olacaktır.",
+    "expected_label": "Öneri",
+    "category_description": "Sağlık ve şeffaflık önerisi"
+  },
+  {
+    "id": 13,
+    "text": "Kredi kartımın son kullanma tarihi bittiğinde yenisi adresime otomatik mi yollanıyor?",
+    "expected_label": "Soru",
+    "category_description": "Banka kartı yenileme sorusu"
+  },
+  {
+    "id": 14,
+    "text": "Son güncellemeden sonra uygulama sürekli çöküyor ve ana sayfada donup kalıyor.",
+    "expected_label": "Şikâyet",
+    "category_description": "Yazılım hatası ve çökme şikayeti"
+  },
+  {
+    "id": 15,
+    "text": "Kargo dağıtıma çıktığında kuryenin anlık canlı konumu haritadan izlenebilse harika bir deneyim olur.",
+    "expected_label": "Öneri",
+    "category_description": "Kargo takip inovasyon önerisi"
+  },
+  {
+    "id": 16,
+    "text": "Doktor randevumu iptal edip başka bir güne ertelemem mümkün müdür?",
+    "expected_label": "Soru",
+    "category_description": "Randevu erteleme sorusu"
+  },
+  {
+    "id": 17,
+    "text": "Sokağımızdaki çöpler üç gündür toplanmadı, koku ve pislikten balkona çıkamıyoruz.",
+    "expected_label": "Şikâyet",
+    "category_description": "Belediye hizmet aksaklığı şikayeti"
+  },
+  {
+    "id": 18,
+    "text": "Otobüs duraklarına araçların kaç dakika sonra geleceğini gösteren akıllı panolar konulmasını öneriyorum.",
+    "expected_label": "Öneri",
+    "category_description": "Toplu taşıma altyapı önerisi"
+  },
+  {
+    "id": 19,
+    "text": "Şifremi unuttuğumda kurtarma SMS'i hangi numaraya gönderiliyor?",
+    "expected_label": "Soru",
+    "category_description": "Güvenlik ve hesap doğrulama sorusu"
+  },
+  {
+    "id": 20,
+    "text": "Kasiyerin azarlayıcı konuşması ve kaba tavırları yüzünden bir daha asla bu mağazadan alışveriş yapmayacağım.",
+    "expected_label": "Şikâyet",
+    "category_description": "Personel davranışı ve mağaza şikayeti"
+  },
+  {
+    "id": 21,
+    "text": "Geri dönüştürülebilir ambalaj kullanımına geçilmesini çevre duyarlılığı açısından tavsiye ederim.",
+    "expected_label": "Öneri",
+    "category_description": "Sürdürülebilirlik ve çevre önerisi"
+  },
+  {
+    "id": 22,
+    "text": "Bu kursu tamamladığımda resmi katılım sertifikası veriliyor mu acaba?",
+    "expected_label": "Soru",
+    "category_description": "Eğitim sertifikası sorusu"
+  },
+  {
+    "id": 23,
+    "text": "İki haftadır kargomdan hiçbir haber yok, takip numarası da geçersiz diyor, resmen paramla rezil oldum.",
+    "expected_label": "Şikâyet",
+    "category_description": "Kayıp kargo ve müşteri mağduriyeti şikayeti"
+  },
+  {
+    "id": 24,
+    "text": "Öğrenci işleri evrak onay sürecini dijitalleştirip e-imzaya geçerse kuyruklar biter.",
+    "expected_label": "Öneri",
+    "category_description": "Üniversite dijitalleşme önerisi"
+  },
+  {
+    "id": 25,
+    "text": "Hangi durumlarda tüketici hakem heyetine başvurabileceğimi belirten bir dokümanınız var mı?",
+    "expected_label": "Soru",
+    "category_description": "Yasal haklar ve prosedür sorusu"
+  }
+]

@@ -1,0 +1,357 @@
+{
+  "total_samples": 25,
+  "correct_predictions": 24,
+  "accuracy": 0.96,
+  "sample_evaluations": [
+    {
+      "id": 1,
+      "text": "Siparişim kargoya verildiğinde SMS ile bilgilendirme yapılacak mı?",
+      "expected_label": "Soru",
+      "predicted_label": "Soru",
+      "confidence": 0.8914215445202109,
+      "probabilities": {
+        "Soru": 0.8914,
+        "Öneri": 0.0556,
+        "Şikâyet": 0.0529
+      },
+      "correct": true,
+      "category_description": "Teslimat ve bildirim sorgusu"
+    },
+    {
+      "id": 2,
+      "text": "Ürünün kutusu paramparça geldi ve içindeki cam parça kırılmış, rezillik resmen!",
+      "expected_label": "Şikâyet",
+      "predicted_label": "Şikâyet",
+      "confidence": 0.8471451001432804,
+      "probabilities": {
+        "Soru": 0.0617,
+        "Öneri": 0.0911,
+        "Şikâyet": 0.8471
+      },
+      "correct": true,
+      "category_description": "Kusurlu ve hasarlı ürün şikayeti"
+    },
+    {
+      "id": 3,
+      "text": "Mobil uygulamaya gece modu seçeneği eklenirse karanlıkta gözü yormaz, çok iyi olur.",
+      "expected_label": "Öneri",
+      "predicted_label": "Öneri",
+      "confidence": 0.9363362493155046,
+      "probabilities": {
+        "Soru": 0.0303,
+        "Öneri": 0.9363,
+        "Şikâyet": 0.0334
+      },
+      "correct": true,
+      "category_description": "Kullanıcı arayüzü iyileştirme önerisi"
+    },
+    {
+      "id": 4,
+      "text": "Faturamda neden 150 TL ek kullanım bedeli yansıtıldığını öğrenebilir miyim?",
+      "expected_label": "Soru",
+      "predicted_label": "Soru",
+      "confidence": 0.9240274441141931,
+      "probabilities": {
+        "Soru": 0.924,
+        "Öneri": 0.0381,
+        "Şikâyet": 0.0378
+      },
+      "correct": true,
+      "category_description": "Fatura ve ücretlendirme sorusu"
+    },
+    {
+      "id": 5,
+      "text": "Müşteri hizmetlerine 40 dakikadır bağlanamıyorum, sürekli bant kaydı dönüyor.",
+      "expected_label": "Şikâyet",
+      "predicted_label": "Şikâyet",
+      "confidence": 0.3840322096323599,
+      "probabilities": {
+        "Soru": 0.3562,
+        "Öneri": 0.2598,
+        "Şikâyet": 0.384
+      },
+      "correct": true,
+      "category_description": "Çağrı merkezi ve bekleme süresi şikayeti"
+    },
+    {
+      "id": 6,
+      "text": "Sık sipariş veren daimi müşteriler için kargo bedava aboneliği getirilmesini tavsiye ederim.",
+      "expected_label": "Öneri",
+      "predicted_label": "Öneri",
+      "confidence": 0.7065353496538122,
+      "probabilities": {
+        "Soru": 0.146,
+        "Öneri": 0.7065,
+        "Şikâyet": 0.1475
+      },
+      "correct": true,
+      "category_description": "Sadakat ve abonelik programı önerisi"
+    },
+    {
+      "id": 7,
+      "text": "İade ettiğim pantolonun ücreti kredi kartıma ne zaman aktarılır acaba?",
+      "expected_label": "Soru",
+      "predicted_label": "Soru",
+      "confidence": 0.9400304610889995,
+      "probabilities": {
+        "Soru": 0.94,
+        "Öneri": 0.0189,
+        "Şikâyet": 0.0411
+      },
+      "correct": true,
+      "category_description": "İade süreci ve para transferi sorusu"
+    },
+    {
+      "id": 8,
+      "text": "Hesabımdan benim onayım olmadan iki defa para çekilmiş, acilen iadesini talep ediyorum.",
+      "expected_label": "Şikâyet",
+      "predicted_label": "Şikâyet",
+      "confidence": 0.8035587546383747,
+      "probabilities": {
+        "Soru": 0.1049,
+        "Öneri": 0.0915,
+        "Şikâyet": 0.8036
+      },
+      "correct": true,
+      "category_description": "Yetkisiz para çekimi şikayeti"
+    },
+    {
+      "id": 9,
+      "text": "Arama çubuğuna filtreleme ve fiyata göre sıralama özellikleri entegre edilmeli.",
+      "expected_label": "Öneri",
+      "predicted_label": "Öneri",
+      "confidence": 0.5166681597362909,
+      "probabilities": {
+        "Soru": 0.1504,
+        "Öneri": 0.5167,
+        "Şikâyet": 0.3329
+      },
+      "correct": true,
+      "category_description": "Arama ve navigasyon geliştirme önerisi"
+    },
+    {
+      "id": 10,
+      "text": "Yurtdışında telefonumu kullanırken internet paketim geçerli olacak mı?",
+      "expected_label": "Soru",
+      "predicted_label": "Soru",
+      "confidence": 0.9477473516384464,
+      "probabilities": {
+        "Soru": 0.9477,
+        "Öneri": 0.0246,
+        "Şikâyet": 0.0276
+      },
+      "correct": true,
+      "category_description": "Roaming ve tarife kapsamı sorusu"
+    },
+    {
+      "id": 11,
+      "text": "Yemek tamamen buz gibi ve dökülmüş halde geldi, kesinlikle kabul etmiyorum.",
+      "expected_label": "Şikâyet",
+      "predicted_label": "Şikâyet",
+      "confidence": 0.7226781724473658,
+      "probabilities": {
+        "Soru": 0.1044,
+        "Öneri": 0.1729,
+        "Şikâyet": 0.7227
+      },
+      "correct": true,
+      "category_description": "Yemek teslimatı ve servis kalitesi şikayeti"
+    },
+    {
+      "id": 12,
+      "text": "Restorandaki menülerin yanına alerjen ve kalori bilgilerinin eklenmesi sağlık açısından faydalı olacaktır.",
+      "expected_label": "Öneri",
+      "predicted_label": "Öneri",
+      "confidence": 0.6060145089749907,
+      "probabilities": {
+        "Soru": 0.1491,
+        "Öneri": 0.606,
+        "Şikâyet": 0.2448
+      },
+      "correct": true,
+      "category_description": "Sağlık ve şeffaflık önerisi"
+    },
+    {
+      "id": 13,
+      "text": "Kredi kartımın son kullanma tarihi bittiğinde yenisi adresime otomatik mi yollanıyor?",
+      "expected_label": "Soru",
+      "predicted_label": "Soru",
+      "confidence": 0.7701560361870294,
+      "probabilities": {
+        "Soru": 0.7702,
+        "Öneri": 0.1097,
+        "Şikâyet": 0.1201
+      },
+      "correct": true,
+      "category_description": "Banka kartı yenileme sorusu"
+    },
+    {
+      "id": 14,
+      "text": "Son güncellemeden sonra uygulama sürekli çöküyor ve ana sayfada donup kalıyor.",
+      "expected_label": "Şikâyet",
+      "predicted_label": "Şikâyet",
+      "confidence": 0.9164272741416194,
+      "probabilities": {
+        "Soru": 0.0371,
+        "Öneri": 0.0465,
+        "Şikâyet": 0.9164
+      },
+      "correct": true,
+      "category_description": "Yazılım hatası ve çökme şikayeti"
+    },
+    {
+      "id": 15,
+      "text": "Kargo dağıtıma çıktığında kuryenin anlık canlı konumu haritadan izlenebilse harika bir deneyim olur.",
+      "expected_label": "Öneri",
+      "predicted_label": "Öneri",
+      "confidence": 0.741513226024837,
+      "probabilities": {
+        "Soru": 0.125,
+        "Öneri": 0.7415,
+        "Şikâyet": 0.1334
+      },
+      "correct": true,
+      "category_description": "Kargo takip inovasyon önerisi"
+    },
+    {
+      "id": 16,
+      "text": "Doktor randevumu iptal edip başka bir güne ertelemem mümkün müdür?",
+      "expected_label": "Soru",
+      "predicted_label": "Soru",
+      "confidence": 0.8728232343539442,
+      "probabilities": {
+        "Soru": 0.8728,
+        "Öneri": 0.0628,
+        "Şikâyet": 0.0644
+      },
+      "correct": true,
+      "category_description": "Randevu erteleme sorusu"
+    },
+    {
+      "id": 17,
+      "text": "Sokağımızdaki çöpler üç gündür toplanmadı, koku ve pislikten balkona çıkamıyoruz.",
+      "expected_label": "Şikâyet",
+      "predicted_label": "Şikâyet",
+      "confidence": 0.647847355023782,
+      "probabilities": {
+        "Soru": 0.1451,
+        "Öneri": 0.2071,
+        "Şikâyet": 0.6478
+      },
+      "correct": true,
+      "category_description": "Belediye hizmet aksaklığı şikayeti"
+    },
+    {
+      "id": 18,
+      "text": "Otobüs duraklarına araçların kaç dakika sonra geleceğini gösteren akıllı panolar konulmasını öneriyorum.",
+      "expected_label": "Öneri",
+      "predicted_label": "Şikâyet",
+      "confidence": 0.41989353461594514,
+      "probabilities": {
+        "Soru": 0.1762,
+        "Öneri": 0.4039,
+        "Şikâyet": 0.4199
+      },
+      "correct": false,
+      "category_description": "Toplu taşıma altyapı önerisi"
+    },
+    {
+      "id": 19,
+      "text": "Şifremi unuttuğumda kurtarma SMS'i hangi numaraya gönderiliyor?",
+      "expected_label": "Soru",
+      "predicted_label": "Soru",
+      "confidence": 0.9040941522924828,
+      "probabilities": {
+        "Soru": 0.9041,
+        "Öneri": 0.0558,
+        "Şikâyet": 0.0401
+      },
+      "correct": true,
+      "category_description": "Güvenlik ve hesap doğrulama sorusu"
+    },
+    {
+      "id": 20,
+      "text": "Kasiyerin azarlayıcı konuşması ve kaba tavırları yüzünden bir daha asla bu mağazadan alışveriş yapmayacağım.",
+      "expected_label": "Şikâyet",
+      "predicted_label": "Şikâyet",
+      "confidence": 0.7274349481255495,
+      "probabilities": {
+        "Soru": 0.0946,
+        "Öneri": 0.1779,
+        "Şikâyet": 0.7274
+      },
+      "correct": true,
+      "category_description": "Personel davranışı ve mağaza şikayeti"
+    },
+    {
+      "id": 21,
+      "text": "Geri dönüştürülebilir ambalaj kullanımına geçilmesini çevre duyarlılığı açısından tavsiye ederim.",
+      "expected_label": "Öneri",
+      "predicted_label": "Öneri",
+      "confidence": 0.8156738061834079,
+      "probabilities": {
+        "Soru": 0.0808,
+        "Öneri": 0.8157,
+        "Şikâyet": 0.1035
+      },
+      "correct": true,
+      "category_description": "Sürdürülebilirlik ve çevre önerisi"
+    },
+    {
+      "id": 22,
+      "text": "Bu kursu tamamladığımda resmi katılım sertifikası veriliyor mu acaba?",
+      "expected_label": "Soru",
+      "predicted_label": "Soru",
+      "confidence": 0.9786743418574188,
+      "probabilities": {
+        "Soru": 0.9787,
+        "Öneri": 0.0081,
+        "Şikâyet": 0.0132
+      },
+      "correct": true,
+      "category_description": "Eğitim sertifikası sorusu"
+    },
+    {
+      "id": 23,
+      "text": "İki haftadır kargomdan hiçbir haber yok, takip numarası da geçersiz diyor, resmen paramla rezil oldum.",
+      "expected_label": "Şikâyet",
+      "predicted_label": "Şikâyet",
+      "confidence": 0.899278071983383,
+      "probabilities": {
+        "Soru": 0.0456,
+        "Öneri": 0.0551,
+        "Şikâyet": 0.8993
+      },
+      "correct": true,
+      "category_description": "Kayıp kargo ve müşteri mağduriyeti şikayeti"
+    },
+    {
+      "id": 24,
+      "text": "Öğrenci işleri evrak onay sürecini dijitalleştirip e-imzaya geçerse kuyruklar biter.",
+      "expected_label": "Öneri",
+      "predicted_label": "Öneri",
+      "confidence": 0.5119833102169529,
+      "probabilities": {
+        "Soru": 0.2636,
+        "Öneri": 0.512,
+        "Şikâyet": 0.2244
+      },
+      "correct": true,
+      "category_description": "Üniversite dijitalleşme önerisi"
+    },
+    {
+      "id": 25,
+      "text": "Hangi durumlarda tüketici hakem heyetine başvurabileceğimi belirten bir dokümanınız var mı?",
+      "expected_label": "Soru",
+      "predicted_label": "Soru",
+      "confidence": 0.9842172554528303,
+      "probabilities": {
+        "Soru": 0.9842,
+        "Öneri": 0.0078,
+        "Şikâyet": 0.0079
+      },
+      "correct": true,
+      "category_description": "Yasal haklar ve prosedür sorusu"
+    }
+  ]
+}

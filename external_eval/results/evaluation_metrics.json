@@ -1,0 +1,263 @@
+{
+  "dataset": "TurkishTextClassifier Independent Synthetic Evaluation Dataset",
+  "dataset_version": "1.0",
+  "evaluated_at": "2026-11-01T12:25:26+03:00",
+  "total_examples": 450,
+  "label_order": [
+    "Soru",
+    "Şikâyet",
+    "Öneri"
+  ],
+  "model": {
+    "name": "TurkishTextClassifier",
+    "version": "1.0.0",
+    "backend": "sklearn",
+    "inference_method": "TurkishTextClassifierService.predict_batch(texts, backend=\"sklearn\")",
+    "production_entrypoint": "src/model/predict.py::TurkishTextClassifierService.predict_batch; src/evren/serve.py defaults request backend to sklearn",
+    "primary_artifact": "artifacts/model/turkish_text_classifier.joblib",
+    "pipeline": "Pipeline(TfidfVectorizer(preprocessor=preprocess_turkish_text, ngram_range=(1,2), sublinear_tf=True), LogisticRegression(C=2.0, class_weight=\"balanced\", solver=\"lbfgs\"))",
+    "confidence_available": true,
+    "confidence_definition": "Maximum class probability from the unchanged production predict() method; values are rounded to 4 decimal places by that method.",
+    "project_also_loads_pytorch_artifact": "artifacts/model/turkish_text_classifier.pt (service initializes it, but default sklearn predictions do not call it)."
+  },
+  "accuracy": 0.8155555555555556,
+  "macro_precision": 0.8180098644682546,
+  "macro_recall": 0.8155555555555556,
+  "macro_f1": 0.81070801359499,
+  "weighted_precision": 0.8180098644682546,
+  "weighted_recall": 0.8155555555555556,
+  "weighted_f1": 0.8107080135949901,
+  "correct_predictions": 367,
+  "incorrect_predictions": 83,
+  "class_distribution": {
+    "Soru": 150,
+    "Öneri": 150,
+    "Şikâyet": 150
+  },
+  "predicted_class_distribution": {
+    "Soru": 179,
+    "Öneri": 118,
+    "Şikâyet": 153
+  },
+  "domain_distribution": {
+    "Bankacılık ve finans": 45,
+    "Belediye hizmetleri": 45,
+    "E-ticaret": 45,
+    "Eğitim": 45,
+    "Kargo ve lojistik": 45,
+    "Restoran ve konaklama": 45,
+    "Sağlık hizmetleri": 45,
+    "Telekomünikasyon": 45,
+    "Ulaşım": 45,
+    "Yazılım ve mobil uygulamalar": 45
+  },
+  "writing_style_distribution": {
+    "Ayrıntılı anlatım": 90,
+    "Günlük konuşma": 90,
+    "Kısa ve doğrudan": 90,
+    "Resmî / kurumsal": 90,
+    "Yazım varyasyonlu": 90
+  },
+  "per_class": {
+    "Soru": {
+      "precision": 0.8379888268156425,
+      "recall": 1.0,
+      "f1_score": 0.9118541033434651,
+      "support": 150,
+      "predicted_count": 179,
+      "correct_count": 150
+    },
+    "Şikâyet": {
+      "precision": 0.7516339869281046,
+      "recall": 0.7666666666666667,
+      "f1_score": 0.759075907590759,
+      "support": 150,
+      "predicted_count": 153,
+      "correct_count": 115
+    },
+    "Öneri": {
+      "precision": 0.864406779661017,
+      "recall": 0.68,
+      "f1_score": 0.7611940298507462,
+      "support": 150,
+      "predicted_count": 118,
+      "correct_count": 102
+    }
+  },
+  "domain_performance": {
+    "Bankacılık ve finans": {
+      "total": 45,
+      "correct": 39,
+      "accuracy": 0.8666666666666667
+    },
+    "Belediye hizmetleri": {
+      "total": 45,
+      "correct": 38,
+      "accuracy": 0.8444444444444444
+    },
+    "E-ticaret": {
+      "total": 45,
+      "correct": 37,
+      "accuracy": 0.8222222222222222
+    },
+    "Eğitim": {
+      "total": 45,
+      "correct": 35,
+      "accuracy": 0.7777777777777778
+    },
+    "Kargo ve lojistik": {
+      "total": 45,
+      "correct": 39,
+      "accuracy": 0.8666666666666667
+    },
+    "Restoran ve konaklama": {
+      "total": 45,
+      "correct": 37,
+      "accuracy": 0.8222222222222222
+    },
+    "Sağlık hizmetleri": {
+      "total": 45,
+      "correct": 34,
+      "accuracy": 0.7555555555555555
+    },
+    "Telekomünikasyon": {
+      "total": 45,
+      "correct": 39,
+      "accuracy": 0.8666666666666667
+    },
+    "Ulaşım": {
+      "total": 45,
+      "correct": 31,
+      "accuracy": 0.6888888888888889
+    },
+    "Yazılım ve mobil uygulamalar": {
+      "total": 45,
+      "correct": 38,
+      "accuracy": 0.8444444444444444
+    }
+  },
+  "writing_style_performance": {
+    "Ayrıntılı anlatım": {
+      "total": 90,
+      "correct": 72,
+      "accuracy": 0.8
+    },
+    "Günlük konuşma": {
+      "total": 90,
+      "correct": 72,
+      "accuracy": 0.8
+    },
+    "Kısa ve doğrudan": {
+      "total": 90,
+      "correct": 70,
+      "accuracy": 0.7777777777777778
+    },
+    "Resmî / kurumsal": {
+      "total": 90,
+      "correct": 79,
+      "accuracy": 0.8777777777777778
+    },
+    "Yazım varyasyonlu": {
+      "total": 90,
+      "correct": 74,
+      "accuracy": 0.8222222222222222
+    }
+  },
+  "confusion_matrix": {
+    "labels": [
+      "Soru",
+      "Şikâyet",
+      "Öneri"
+    ],
+    "rows_are": "gold_label",
+    "columns_are": "predicted_label",
+    "values": [
+      [
+        150,
+        0,
+        0
+      ],
+      [
+        19,
+        115,
+        16
+      ],
+      [
+        10,
+        38,
+        102
+      ]
+    ]
+  },
+  "error_pairs": {
+    "Öneri -> Soru": 10,
+    "Öneri -> Şikâyet": 38,
+    "Şikâyet -> Soru": 19,
+    "Şikâyet -> Öneri": 16
+  },
+  "confidence_summary": {
+    "mean_confidence_correct": 0.701266485013624,
+    "mean_confidence_incorrect": 0.44434939759036146,
+    "median_confidence_correct": 0.7015,
+    "median_confidence_incorrect": 0.4346
+  },
+  "inference": {
+    "rows_submitted": 450,
+    "rows_predicted": 450,
+    "input_column_only": "text",
+    "gold_label_used_during_inference": false,
+    "backend": "sklearn",
+    "mean_reported_sample_latency_ms": 0.7035377777777777
+  },
+  "environment": {
+    "python": "3.13.5",
+    "scikit_learn_runtime": "1.8.0",
+    "torch_runtime": "2.10.0+cpu",
+    "joblib_runtime": "1.5.3",
+    "pandas_runtime": "2.2.3",
+    "numpy_runtime": "2.3.5",
+    "serialization_warning": "joblib.load emitted InconsistentVersionWarning: persisted scikit-learn estimators report version 1.9.1, runtime is 1.8.0. The pipeline loaded and returned predictions; results should be reproduced under the artifact-matching scikit-learn version when available."
+  },
+  "integrity": {
+    "model_artifact_files_hashed": 7,
+    "original_dataset_files_hashed": 4,
+    "model_and_original_data_hashes_unchanged_before_vs_after": true,
+    "model_artifact_sha256": {
+      "artifacts/model/config.json": "53c25116407cec1041cb7367f353f1f08e4e3efdba348144a7cb1dfe4f7cb27a",
+      "artifacts/model/metadata.json": "e24c8c3d91cb91abb91797e047bcf4d7fa6a6df2316b8b92077b6b59ef6fc597",
+      "artifacts/model/turkish_text_classifier.joblib": "3d456e6fbe95e48b78446249cd3dcf9c5a78e9e93f699a5d767e2fd609c525f7",
+      "artifacts/model/turkish_text_classifier.pt": "7a684a6708a38d3636bad0236f9f9c529466831db200b015963201cd570f48a3",
+      "artifacts/model/turkish_text_classifier_full.pt": "c42587c68f515e7f6dd8d31ca82b4f2622931e9f30041f67644d73cf7f2575a4",
+      "artifacts/model/vectorizer.joblib": "2c21b229a3a7375711bf64f0088d0f40e18050e0d07a8e1db7581c314d852a5a",
+      "artifacts/model/vocab.json": "50822102f2bd42953e31edb74418241002ba40eb6aa48dfda790ff5371ae0821"
+    },
+    "original_dataset_sha256": {
+      "data/test.csv": "bc710f1a6420c5f7a682b1650de40229d035bc3a7fc6ef0f844be95358c57d93",
+      "data/train.csv": "d3cb070c76a34308511e8ee2bb52ee6b08e3cd1907e45f6605ee6d8f9e2f64e2",
+      "data/turkish_text_dataset.csv": "f2549486ef9f7a42fbacc320eb0a7c08f22e97ad9c7057e0130f3fdcbc89f56b",
+      "data/turkish_text_dataset.jsonl": "d05de6422b4b723158e626e7fcef34c7ddb689533b8b6b0f1077517ec98eed96"
+    },
+    "model_weights_modified": false,
+    "original_datasets_modified": false
+  },
+  "previous_project_reported_results": {
+    "internal_heldout_test": {
+      "total": 385,
+      "correct": 384,
+      "incorrect": 1,
+      "accuracy": 0.9974025974025974,
+      "macro_precision": 0.9973958333333334,
+      "macro_recall": 0.9968847352024922,
+      "macro_f1": 0.9971278652305994,
+      "weighted_f1": 0.997401593159671,
+      "source": "artifacts/reports/evaluation_report.json; not re-run in this task"
+    },
+    "manual_test": {
+      "total": 25,
+      "correct": 24,
+      "incorrect": 1,
+      "accuracy": 0.96,
+      "source": "artifacts/reports/manual_test_results.json; not re-run in this task"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+# Python bytecode and test/tool caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments and local environment settings
+.venv/
+venv/
+env/
+.env
+.env.*
+!.env.example
+
+# Editor / OS noise
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Local logs and temporary outputs
+*.log
+*.tmp
+*.bak
+
+# Keep the tracked model artifacts, datasets, reports, and evaluation outputs.

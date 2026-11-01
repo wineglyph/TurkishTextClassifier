@@ -1,0 +1,9 @@
+# Runtime / training dependencies.
+# The bundled scikit-learn joblib pipeline was serialized with scikit-learn 1.9.1.
+# Keep this version aligned to avoid cross-version unpickling warnings.
+scikit-learn==1.9.1
+numpy>=2.0,<3.0
+pandas>=2.2,<3.0
+joblib>=1.4,<2.0
+torch>=2.0,<3.0
+requests>=2.31,<3.0

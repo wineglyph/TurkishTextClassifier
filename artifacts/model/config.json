@@ -1,0 +1,27 @@
+{
+  "model_name": "TurkishTextClassifier",
+  "slug": "turkish-text-classifier",
+  "version": "1.0.0",
+  "modality": "NLP",
+  "task": "text_classification",
+  "framework": "pytorch",
+  "supported_formats": [
+    "pt",
+    "joblib"
+  ],
+  "num_classes": 3,
+  "classes": [
+    "Soru",
+    "Öneri",
+    "Şikâyet"
+  ],
+  "input_dim": 4123,
+  "ngram_range": [
+    1,
+    2
+  ],
+  "sublinear_tf": true,
+  "class_weight": "balanced",
+  "c_param": 2.0,
+  "latency_ms": 1.164
+}

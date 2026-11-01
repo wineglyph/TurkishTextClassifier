@@ -1,0 +1,82 @@
+{
+  "summary": {
+    "accuracy": 0.9974025974025974,
+    "macro_precision": 0.9973958333333334,
+    "macro_recall": 0.9968847352024922,
+    "macro_f1": 0.9971278652305994,
+    "weighted_precision": 0.9974228896103896,
+    "weighted_recall": 0.9974025974025974,
+    "weighted_f1": 0.997401593159671,
+    "training_duration_seconds": 0.16414880752563477,
+    "latency_ms_per_sample": 1.1642909049987793
+  },
+  "cv_results": {
+    "LogisticRegression (C=2.0)": {
+      "mean": 0.9958339397690533,
+      "std": 0.004996183640972391
+    },
+    "LinearSVC (C=1.0)": {
+      "mean": 0.9958339397690533,
+      "std": 0.004996183640972391
+    },
+    "ComplementNB": {
+      "mean": 0.9958339397690533,
+      "std": 0.004996183640972391
+    }
+  },
+  "classification_report": {
+    "Soru": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 151.0
+    },
+    "Şikâyet": {
+      "precision": 0.9921875,
+      "recall": 1.0,
+      "f1-score": 0.996078431372549,
+      "support": 127.0
+    },
+    "Öneri": {
+      "precision": 1.0,
+      "recall": 0.9906542056074766,
+      "f1-score": 0.99530516432,
+      "support": 107.0
+    },
+    "accuracy": 0.9974025974025974,
+    "macro avg": {
+      "precision": 0.9973958333333334,
+      "recall": 0.9968847352024922,
+      "f1-score": 0.9971278652305994,
+      "support": 385.0
+    },
+    "weighted avg": {
+      "precision": 0.9974228896103896,
+      "recall": 0.9974025974025974,
+      "f1-score": 0.997401593159671,
+      "support": 385.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      151,
+      0,
+      0
+    ],
+    [
+      0,
+      127,
+      0
+    ],
+    [
+      0,
+      1,
+      106
+    ]
+  ],
+  "classes": [
+    "Soru",
+    "Şikâyet",
+    "Öneri"
+  ]
+}

@@ -1,0 +1,451 @@
+id,text,gold_label,domain,writing_style,synthetic
+SYN-0001,Sipariş kaydım oluşturulduğu hâlde e-faturayı hesabımın hangi bölümünden indirebilirim?,Soru,E-ticaret,Resmî / kurumsal,true
+SYN-0024,Kuponum ödeme sırasında silindi ve sepet tutarı açıklama yapılmadan yükseldi.,Şikâyet,E-ticaret,Ayrıntılı anlatım,true
+SYN-0047,Yurt dışına yapılacak döviz transferinde alıcı bankanın masrafı işlemden önce görüntülenebiliyor mu?,Soru,Bankacılık ve finans,Günlük konuşma,true
+SYN-0070,Kapatılmış kredi kartıma yeniden borç çıkarılmış; itirazım reddedilirken hiçbir gerekçe paylaşılmadı.,Şikâyet,Bankacılık ve finans,Yazım varyasyonlu,true
+SYN-0093,Yurt dışı kullanımında gelen aramalar da günlük dolaşım paketine dahil ediliyor mu?,Soru,Telekomünikasyon,Kısa ve doğrudan,true
+SYN-0116,Modem değişimi için ücret alındı fakat yeni cihaz da ilk gününden beri bağlantıyı düşürüyor.,Şikâyet,Telekomünikasyon,Resmî / kurumsal,true
+SYN-0139,Yeni sürümde eski ayarlarıma geri dönmek için bir yedek dosyası kullanabilir miyim?,Soru,Yazılım ve mobil uygulamalar,Ayrıntılı anlatım,true
+SYN-0162,Güncelleme notlarında belirtilmeyen izinler istendi ve uygulama bunları reddedince çalışmayı durdurdu.,Şikâyet,Yazılım ve mobil uygulamalar,Günlük konuşma,true
+SYN-0185,Feribot seferinde bisiklet taşımak için önceden yer ayırtılması gerekiyor mu?,Soru,Ulaşım,Yazım varyasyonlu,true
+SYN-0208,"otobus klimalari calismiyor, yol boyunca cam acmak zorunda kaldik.",Şikâyet,Ulaşım,Kısa ve doğrudan,true
+SYN-0231,Evde sağlık hizmeti başvurusu için hangi koşulların karşılanması gerekiyor?,Soru,Sağlık hizmetleri,Resmî / kurumsal,true
+SYN-0254,"hasta kayit masasinda bilgilerim yanlis yazilmis, duzeltmek icin saatlerdir bekliyorum.",Şikâyet,Sağlık hizmetleri,Ayrıntılı anlatım,true
+SYN-0277,Emlak vergisi internetten ödenebiliyor mu?,Soru,Belediye hizmetleri,Günlük konuşma,true
+SYN-0300,"otobus duraginin camlari kirik ve aydinlatmasi calismiyor, aksam beklemek guvensiz.",Şikâyet,Belediye hizmetleri,Yazım varyasyonlu,true
+SYN-0323,Yaz okulunda başka bölümden ders seçebilir miyim?,Soru,Eğitim,Kısa ve doğrudan,true
+SYN-0346,Ders kayıt ekranına öğrencinin mezuniyet planına göre uygun dersleri önceliklendiren bir öneri bölümü eklenebilir.,Öneri,Eğitim,Resmî / kurumsal,true
+SYN-0369,İade etiketi şubede basılabiliyor mu?,Soru,Kargo ve lojistik,Ayrıntılı anlatım,true
+SYN-0392,Paketin aktarma merkezlerinde beklediği süreyi ayrı ayrı gösteren bir takip çizelgesi sunulmasını öneriyorum.,Öneri,Kargo ve lojistik,Günlük konuşma,true
+SYN-0415,Glutensiz yemek hazırlarken ayrı ekipman kullanılıp kullanılmadığını öğrenebilir miyim?,Soru,Restoran ve konaklama,Yazım varyasyonlu,true
+SYN-0438,Yoğun saatlerde siparişin mutfağa alındığı ve hazırlanma aşamalarını gösteren bir ekran müşteriyi bilgilendirir.,Öneri,Restoran ve konaklama,Kısa ve doğrudan,true
+SYN-0011,"Aynı üründen iki beden alıp uymayanı geri göndermem mümkün mü, bunun için ayrı kargo ücreti çıkar mı?",Soru,E-ticaret,Resmî / kurumsal,true
+SYN-0034,Alışveriş yapanların beden seçimini kolaylaştırmak amacıyla ölçü tablosunun yanına örnek kullanıcı bilgileri konulsa güzel olur.,Öneri,E-ticaret,Ayrıntılı anlatım,true
+SYN-0057,Yeni müşterilere sunulan hesap işletim koşullarını karşılaştırabileceğim güncel bir tablo bulunuyor mu?,Soru,Bankacılık ve finans,Günlük konuşma,true
+SYN-0080,Para transferi tamamlanmadan önce alıcı adının daha belirgin biçimde doğrulanması hatalı gönderimleri azaltacaktır.,Öneri,Bankacılık ve finans,Yazım varyasyonlu,true
+SYN-0103,paketim yenilenmeden once kalan internetimi devretme secenegi var mi?,Soru,Telekomünikasyon,Kısa ve doğrudan,true
+SYN-0126,İşitme engelli müşteriler için görüntülü destek ve yazılı canlı görüşme kanallarının genişletilmesi yararlı olacaktır.,Öneri,Telekomünikasyon,Resmî / kurumsal,true
+SYN-0149,uygulamadaki taslaklar internet baglantisi kesilince cihazda saklaniyor mu?,Soru,Yazılım ve mobil uygulamalar,Ayrıntılı anlatım,true
+SYN-0172,Menüyü sadeleştirin.,Öneri,Yazılım ve mobil uygulamalar,Günlük konuşma,true
+SYN-0195,sefer saatleri resmi tatillerde de ayni tarifeden mi ilerliyor?,Soru,Ulaşım,Yazım varyasyonlu,true
+SYN-0218,Bilet iptal adımını kısaltın.,Öneri,Ulaşım,Kısa ve doğrudan,true
+SYN-0241,Poliklinik randevum olmasına rağmen iki saat bekledim ve sıra numaraları açıklama yapılmadan değiştirildi.,Şikâyet,Sağlık hizmetleri,Resmî / kurumsal,true
+SYN-0264,Randevu hatırlatmasını iki kez gönderin.,Öneri,Sağlık hizmetleri,Ayrıntılı anlatım,true
+SYN-0287,Yol çalışması için kazılan bölüm açık bırakılmış; gece aydınlatma olmadığı için yayalar tehlike yaşıyor.,Şikâyet,Belediye hizmetleri,Günlük konuşma,true
+SYN-0310,İmar ve ruhsat başvurularında eksik belgeyi önceden kontrol eden bir dijital ön inceleme aracı geliştirilebilir.,Öneri,Belediye hizmetleri,Yazım varyasyonlu,true
+SYN-0333,Kütüphane bilgisayarlarının çoğu çalışmıyor ve arıza bildirimleri haftalardır sonuçsuz.,Şikâyet,Eğitim,Kısa ve doğrudan,true
+SYN-0356,Öğrenci kulüplerinin etkinliklerini ortak bir takvimde filtreleyerek göstermenizi tavsiye ederim.,Öneri,Eğitim,Resmî / kurumsal,true
+SYN-0379,Paketin üzerine kırılabilir etiketi yapıştırılmasına rağmen içindeki cihaz parçalanmış geldi.,Şikâyet,Kargo ve lojistik,Ayrıntılı anlatım,true
+SYN-0402,Kırılabilir gönderiler için paketleme standardını anlatan kısa bir görsel rehber hazırlanmasını tavsiye ederim.,Öneri,Kargo ve lojistik,Günlük konuşma,true
+SYN-0425,Paket servis çok geç geldi ve sıcak kalması gereken yemekler tamamen soğumuştu.,Şikâyet,Restoran ve konaklama,Yazım varyasyonlu,true
+SYN-0448,uygulamaya siparisin tahmini hazir olma suresini gosteren canli bir durum ekleyin.,Öneri,Restoran ve konaklama,Kısa ve doğrudan,true
+SYN-0021,Müşteri temsilcisi sorunu dinlemeden görüşmeyi sonlandırdı; bu yaklaşım hiç kabul edilebilir değil.,Şikâyet,E-ticaret,Resmî / kurumsal,true
+SYN-0044,mobil sitede filtreler sayfa degisince sifirlaniyor; secimleri koruyan bir ayar eklenmesini oneririm.,Öneri,E-ticaret,Ayrıntılı anlatım,true
+SYN-0067,Kartımdan iznim dışında küçük bir tutar çekilmiş; işlem ayrıntısını da göremiyorum.,Şikâyet,Bankacılık ve finans,Günlük konuşma,true
+SYN-0090,yasli musteriler icin daha buyuk yazi ve sade menu secenegi sunulmasini oneriyorum.,Öneri,Bankacılık ve finans,Yazım varyasyonlu,true
+SYN-0113,Fatura bildirimleri son ödeme gününden sonra geliyor.,Şikâyet,Telekomünikasyon,Kısa ve doğrudan,true
+SYN-0136,Hesabımı iki cihazda açık tutarsam bildirimler her ikisine de eş zamanlı olarak iletiliyor mu?,Soru,Yazılım ve mobil uygulamalar,Resmî / kurumsal,true
+SYN-0159,Senkronizasyon saatlerdir tamamlanmıyor.,Şikâyet,Yazılım ve mobil uygulamalar,Ayrıntılı anlatım,true
+SYN-0182,Uçuşum aktarmalı olduğu için bagajım son varış noktasına kadar otomatik gönderiliyor mu?,Soru,Ulaşım,Günlük konuşma,true
+SYN-0205,Bilet kontrolü sırasında personel hatalı işlem yaptı ve geçerli biletim olmasına rağmen yeniden ücret ödedim.,Şikâyet,Ulaşım,Yazım varyasyonlu,true
+SYN-0228,Reçetemdeki ilacın farklı doz seçeneği bulunup bulunmadığını eczaneden önce nasıl doğrulayabilirim?,Soru,Sağlık hizmetleri,Kısa ve doğrudan,true
+SYN-0251,Muayene ücretini veznede ödedim fakat sistemde borçlu görünüyorum ve tekrar ödeme isteniyor.,Şikâyet,Sağlık hizmetleri,Resmî / kurumsal,true
+SYN-0274,İkamet ettiğim bölgede evsel atıkların toplandığı günleri gösteren bir takvim yayımlanıyor mu?,Soru,Belediye hizmetleri,Ayrıntılı anlatım,true
+SYN-0297,Yağmurda alt geçidi su bastı ve uyarı levhası konmadığı için insanlar mahsur kaldı.,Şikâyet,Belediye hizmetleri,Günlük konuşma,true
+SYN-0320,Staj dosyasını teslim ettikten sonra değerlendirme sonucunun açıklanacağı tarihi nereden takip ederim?,Soru,Eğitim,Yazım varyasyonlu,true
+SYN-0343,"ogrenci bilgi sistemi acilmiyor, kayit yenileme son gunu islem yapamadim.",Şikâyet,Eğitim,Kısa ve doğrudan,true
+SYN-0366,Yurt dışından gelen paketin gümrükte bekleme nedenini takip numarasıyla öğrenebilir miyim?,Soru,Kargo ve lojistik,Resmî / kurumsal,true
+SYN-0389,"subede bekleyen kargomu almaya gittim ama paket bulunamadi, kimse bilgi vermiyor.",Şikâyet,Kargo ve lojistik,Ayrıntılı anlatım,true
+SYN-0412,Evcil hayvan kabul eden odalarınız var mı?,Soru,Restoran ve konaklama,Günlük konuşma,true
+SYN-0435,"kahvalti alaninda temiz tabak kalmamis, gorevliler uzun sure yenileme yapmadi.",Şikâyet,Restoran ve konaklama,Yazım varyasyonlu,true
+SYN-0008,Bir ürünün satıcısına satın almadan önce nasıl mesaj gönderebilirim?,Soru,E-ticaret,Kısa ve doğrudan,true
+SYN-0031,Ürün karşılaştırma ekranına garanti süresi ve enerji tüketimi gibi teknik ölçütlerin de eklenmesini öneriyorum.,Öneri,E-ticaret,Resmî / kurumsal,true
+SYN-0054,Birikim hesabıma ortak hesap sahibi eklemek mümkün mü?,Soru,Bankacılık ve finans,Ayrıntılı anlatım,true
+SYN-0077,Şüpheli işlem bildirimi geldiğinde kartı geçici olarak tek dokunuşla dondurma seçeneği sunulmasını öneriyorum.,Öneri,Bankacılık ve finans,Günlük konuşma,true
+SYN-0100,Evde iki farklı modem kullanıyorsak bağlantı kalitesine göre hangisinin öncelikli olacağını belirleyebilir miyiz?,Soru,Telekomünikasyon,Yazım varyasyonlu,true
+SYN-0123,Kullanılmayan internet hakkının bir sonraki aya sınırlı ölçüde aktarılması müşteriler için faydalı olabilir.,Öneri,Telekomünikasyon,Kısa ve doğrudan,true
+SYN-0146,Hesap silme talebinden önce verilerimin bir kopyasını indirme hakkım bulunuyor mu?,Soru,Yazılım ve mobil uygulamalar,Resmî / kurumsal,true
+SYN-0169,Uygulamada yüksek kontrastlı tema bulunması düşük görme keskinliğine sahip kişilerin kullanımını kolaylaştıracaktır.,Öneri,Yazılım ve mobil uygulamalar,Ayrıntılı anlatım,true
+SYN-0192,Şehir içi bisiklet paylaşımında günlük kullanım süresi nasıl hesaplanıyor?,Soru,Ulaşım,Günlük konuşma,true
+SYN-0215,Yoğun saatlerde araç içi doluluk oranını canlı paylaşmak yolcuların alternatif sefer seçmesine yardımcı olur.,Öneri,Ulaşım,Yazım varyasyonlu,true
+SYN-0238,tahlil sonucunun referans araligini hasta panelinde gorebilir miyim?,Soru,Sağlık hizmetleri,Kısa ve doğrudan,true
+SYN-0261,İşitme güçlüğü yaşayan hastalar için kayıt ve danışma noktalarında yazılı iletişim ekranları bulunmasını tavsiye ederim.,Öneri,Sağlık hizmetleri,Resmî / kurumsal,true
+SYN-0284,atik pil toplama noktalarinin listesini belediyenin sitesinde bulabilir miyim?,Soru,Belediye hizmetleri,Ayrıntılı anlatım,true
+SYN-0307,Çeşme çevresine oturma alanı koyun.,Öneri,Belediye hizmetleri,Günlük konuşma,true
+SYN-0330,universite yurdunda misafir ogrenci olarak kisa sure kalma imkani bulunuyor mu?,Soru,Eğitim,Yazım varyasyonlu,true
+SYN-0353,Ders kayıt saatlerini daha geniş aralığa yayın.,Öneri,Eğitim,Kısa ve doğrudan,true
+SYN-0376,Kargom teslim edildi mesajı aldı ama bina görevlisi dâhil kimse paketi görmedi; teslimat fotoğrafı da yok.,Şikâyet,Kargo ve lojistik,Resmî / kurumsal,true
+SYN-0399,Şube çalışma saatlerini haritada gösterin.,Öneri,Kargo ve lojistik,Ayrıntılı anlatım,true
+SYN-0422,Oda temizliği yapılmamıştı; resepsiyona iki kez bildirmeme rağmen akşama kadar kimse gelmedi.,Şikâyet,Restoran ve konaklama,Günlük konuşma,true
+SYN-0445,Paket servis poşetlerinde geri dönüştürülebilir malzeme tercih edilmesi atık miktarını azaltabilir.,Öneri,Restoran ve konaklama,Yazım varyasyonlu,true
+SYN-0018,"İade için verdiğim paketin teslim alındığı görünüyor, fakat destek ekibi haftalardır kaydımı incelemiyor.",Şikâyet,E-ticaret,Kısa ve doğrudan,true
+SYN-0041,Ürün fotoğraflarında farklı ışıklardaki görünümü gösteren kısa videolar bulunması karar vermeyi kolaylaştıracaktır.,Öneri,E-ticaret,Resmî / kurumsal,true
+SYN-0064,Düzenli ödeme talimatım varken faturam ödenmemiş ve gecikme cezası tarafıma yansıtılmış.,Şikâyet,Bankacılık ve finans,Ayrıntılı anlatım,true
+SYN-0087,Hesap kapatma ve veri indirme adımlarını tek bir anlaşılır kontrol listesinde toplamanızı tavsiye ederim.,Öneri,Bankacılık ve finans,Günlük konuşma,true
+SYN-0110,"Kurulum ekibi belirtilen saatte gelmedi, yeni randevu için de günler sonrasına tarih verildi.",Şikâyet,Telekomünikasyon,Yazım varyasyonlu,true
+SYN-0133,uygulamaya veri tuketimi belirledigim seviyeye gelince bildirim gonderen bir secenek ekleyin.,Öneri,Telekomünikasyon,Kısa ve doğrudan,true
+SYN-0156,Paylaşılan belgeye erişim iznim kaldırılmış ama değişiklik geçmişinde bunu kimin yaptığı görünmüyor.,Şikâyet,Yazılım ve mobil uygulamalar,Resmî / kurumsal,true
+SYN-0179,bildirimleri konuya gore ayri ayri acip kapatma imkani eklenmesini oneriyorum.,Öneri,Yazılım ve mobil uygulamalar,Ayrıntılı anlatım,true
+SYN-0202,Araç zamanında gelmedi.,Şikâyet,Ulaşım,Günlük konuşma,true
+SYN-0225,bisiklet tasima kapasitesini gosteren bir filtre eklemenizi oneriyorum.,Öneri,Ulaşım,Yazım varyasyonlu,true
+SYN-0248,Bekleme salonunda sıra ekranı çalışmıyor.,Şikâyet,Sağlık hizmetleri,Kısa ve doğrudan,true
+SYN-0271,Mahallemizde planlanan su kesintisinin hangi sokakları ve saat aralığını kapsadığını nereden öğrenebilirim?,Soru,Belediye hizmetleri,Resmî / kurumsal,true
+SYN-0294,Sokak köpekleri için bırakılan su kapları düzenli temizlenmiyor.,Şikâyet,Belediye hizmetleri,Ayrıntılı anlatım,true
+SYN-0317,Yatay geçiş başvurusunda önceki üniversitemden alınan ders içeriklerini hangi formatta sunmalıyım?,Soru,Eğitim,Günlük konuşma,true
+SYN-0340,Staj onayım zamanında girilmediği için mezuniyet başvurum bir dönem ertelendi; kurum içi iletişim kopukluğu yüzünden mağdur oldum.,Şikâyet,Eğitim,Yazım varyasyonlu,true
+SYN-0363,Kırılabilir eşya gönderisinde sigorta bedeli hangi beyan tutarı üzerinden hesaplanıyor?,Soru,Kargo ve lojistik,Kısa ve doğrudan,true
+SYN-0386,Koli ıslanmış ve içindeki belgeler kullanılamaz hâle gelmiş; hasar tutanağı tutmayı da kabul etmediler.,Şikâyet,Kargo ve lojistik,Resmî / kurumsal,true
+SYN-0409,Restoranda çocuk sandalyesi ayırtmak için rezervasyon sırasında not düşmem yeterli olur mu?,Soru,Restoran ve konaklama,Ayrıntılı anlatım,true
+SYN-0432,Menü fiyatı ile kasada alınan tutar farklı çıktı; güncel fiyat listesi de masalarda bulunmuyordu.,Şikâyet,Restoran ve konaklama,Günlük konuşma,true
+SYN-0005,Sepette uygulanan indirim ödeme ekranına geçince kayboluyor; kampanyanın kullanım koşulu farklı mı?,Soru,E-ticaret,Yazım varyasyonlu,true
+SYN-0028,"siparisim teslim edildi yaziyor ama kapida paket yok, komsulara da birakilmamis.",Şikâyet,E-ticaret,Kısa ve doğrudan,true
+SYN-0051,Otomatik fatura talimatının hangi tarihte hesaptan çekim yapacağını nereden kontrol ederim?,Soru,Bankacılık ve finans,Resmî / kurumsal,true
+SYN-0074,kart aidatini iade ettik dediler ama ekstrede hala ayni bedel duruyor.,Şikâyet,Bankacılık ve finans,Ayrıntılı anlatım,true
+SYN-0097,Ek internet paketi kaç gün geçerli?,Soru,Telekomünikasyon,Günlük konuşma,true
+SYN-0120,"hat cekim gucu evde neredeyse sifir, defalarca bildirdim ama kalici bir duzeltme yapilmadi.",Şikâyet,Telekomünikasyon,Yazım varyasyonlu,true
+SYN-0143,Bir projeyi başka hesaba aktarabilir miyim?,Soru,Yazılım ve mobil uygulamalar,Kısa ve doğrudan,true
+SYN-0166,Kullanıcıların ana ekrandaki kartları sürükleyerek kendi ihtiyaçlarına göre düzenleyebilmesi deneyimi kişiselleştirir.,Öneri,Yazılım ve mobil uygulamalar,Resmî / kurumsal,true
+SYN-0189,Havaalanına giden servis hangi duraklardan geçiyor?,Soru,Ulaşım,Ayrıntılı anlatım,true
+SYN-0212,Aktarma süresi kısa olan biletlerde olası gecikme riskini satın alma aşamasında belirten bir uyarı sunmanızı öneriyorum.,Öneri,Ulaşım,Günlük konuşma,true
+SYN-0235,Muayeneden sonra reçetemin dijital kopyasını refakatçimle paylaşmam mümkün mü?,Soru,Sağlık hizmetleri,Yazım varyasyonlu,true
+SYN-0258,Hastanelerde refakatçi ve ziyaretçi kurallarının güncel yoğunluk bilgisiyle birlikte paylaşılması yararlı olabilir.,Öneri,Sağlık hizmetleri,Kısa ve doğrudan,true
+SYN-0281,Yağmur suyu hattı bakım programının mahallemizdeki tarihini önceden görebilir miyiz?,Soru,Belediye hizmetleri,Resmî / kurumsal,true
+SYN-0304,Yeni ağaç dikilecek bölgeler belirlenirken sakinlerden çevrim içi konum ve tür önerisi alınabilir.,Öneri,Belediye hizmetleri,Ayrıntılı anlatım,true
+SYN-0327,Öğrenci kartımı kaybedersem kampüs girişinde geçici belge kullanabilir miyim?,Soru,Eğitim,Günlük konuşma,true
+SYN-0350,Yemekhane menüsünde alerjen ve besin değeri bilgisinin görünür olması öğrencilerin daha bilinçli seçim yapmasını sağlar.,Öneri,Eğitim,Yazım varyasyonlu,true
+SYN-0373,gonderi takip numaramla teslimat noktasini degistirme islemi yapabilir miyim?,Soru,Kargo ve lojistik,Kısa ve doğrudan,true
+SYN-0396,İade gönderilerinde ilk teslim alımında otomatik dijital makbuz oluşturulması kayıp kayıtları önlemeye yardımcı olur.,Öneri,Kargo ve lojistik,Resmî / kurumsal,true
+SYN-0419,menudeki vegan secenekler icin ayri hazirlik yapiliyor mu?,Soru,Restoran ve konaklama,Ayrıntılı anlatım,true
+SYN-0442,Masalara priz ekleyin.,Öneri,Restoran ve konaklama,Günlük konuşma,true
+SYN-0015,urun yorumlarinda fotograf yuklemek icin bir alt sinir ya da dosya boyutu siniri var mi?,Soru,E-ticaret,Yazım varyasyonlu,true
+SYN-0038,Kargo ücretini ödeme öncesinde daha görünür gösterin.,Öneri,E-ticaret,Kısa ve doğrudan,true
+SYN-0061,Hesabımdan bilgim dışında aynı üyelik için üç ayrı tahsilat yapılmış; itiraz kaydım günlerdir yanıtsız.,Şikâyet,Bankacılık ve finans,Resmî / kurumsal,true
+SYN-0084,ATM arızalarını harita üzerinde bildiren bir bölüm eklenebilir.,Öneri,Bankacılık ve finans,Ayrıntılı anlatım,true
+SYN-0107,Paketimi değiştirmediğim hâlde faturamda ek internet ücreti oluşmuş ve itirazım incelenmiyor.,Şikâyet,Telekomünikasyon,Günlük konuşma,true
+SYN-0130,Arıza kayıtlarına fotoğraf ve kısa video eklenebilmesi teknik ekibin sorunu daha hızlı anlamasını sağlar.,Öneri,Telekomünikasyon,Yazım varyasyonlu,true
+SYN-0153,"Arama sonuçları aynı kayıtları tekrar tekrar gösteriyor, filtreler de seçtiğim hâliyle kalmıyor.",Şikâyet,Yazılım ve mobil uygulamalar,Kısa ve doğrudan,true
+SYN-0176,Gizlilik ayarlarının neyi değiştirdiğini örneklerle anlatan kısa bir rehber hazırlanması güveni güçlendirebilir.,Öneri,Yazılım ve mobil uygulamalar,Resmî / kurumsal,true
+SYN-0199,Kartımdan yolculuk ücreti iki defa düşülmüş; başvuru ekranı makbuzları kabul etmiyor.,Şikâyet,Ulaşım,Ayrıntılı anlatım,true
+SYN-0222,Şehir kartına tek kullanımlık misafir bileti üretme özelliği eklenmesi ziyaretçiler için pratik bir çözüm olur.,Öneri,Ulaşım,Günlük konuşma,true
+SYN-0245,Yataklı serviste temizlik aksatılıyor; çağrı düğmesine bastığımızda uzun süre kimse gelmiyor.,Şikâyet,Sağlık hizmetleri,Yazım varyasyonlu,true
+SYN-0268,mobil uygulamada randevuya kalan sureyi ve bina girisini gosteren bir ekran olmasini oneriyorum.,Öneri,Sağlık hizmetleri,Kısa ve doğrudan,true
+SYN-0291,"Su faturama sayaçta görünmeyen bir tüketim eklenmiş, itiraz masasında dosyam kayda alınmadı.",Şikâyet,Belediye hizmetleri,Resmî / kurumsal,true
+SYN-0314,sulama saatlerini otomatik ayarlayan sensörler park bakiminda su tasarrufu saglayabilir.,Öneri,Belediye hizmetleri,Ayrıntılı anlatım,true
+SYN-0337,Ders programı dönem içinde sürekli değişiyor ve önceden yaptığım çalışma planı her hafta bozuluyor.,Şikâyet,Eğitim,Günlük konuşma,true
+SYN-0360,mezunlarin staj ve is ilanlarini paylasabilecegi bir mentorluk alani acilabilir.,Öneri,Eğitim,Yazım varyasyonlu,true
+SYN-0383,Paketim yanlış şubeye gitmiş.,Şikâyet,Kargo ve lojistik,Kısa ve doğrudan,true
+SYN-0406,Menüdeki günlük çorbanın süt ürünü içerip içermediğini sipariş vermeden önce görebilir miyim?,Soru,Restoran ve konaklama,Resmî / kurumsal,true
+SYN-0429,Oda fotoğrafları gerçeği yansıtmıyor.,Şikâyet,Restoran ve konaklama,Ayrıntılı anlatım,true
+SYN-0002,İade talebi onaylandıktan sonra ödemenin karta yansıması için ayrıca bir işlem yapmam gerekir mi?,Soru,E-ticaret,Günlük konuşma,true
+SYN-0025,"Üç ayrı siparişimde de kırılabilir ürünler korumasız paketlenmiş, her seferinde hasarlı teslim aldım.",Şikâyet,E-ticaret,Yazım varyasyonlu,true
+SYN-0048,Kredi başvurumun değerlendirme aşamasında benden ek belge istenip istenmediğini nasıl öğrenebilirim?,Soru,Bankacılık ve finans,Kısa ve doğrudan,true
+SYN-0071,"Emekli maaşımın yatırılması gereken gün geçti, hesap hareketlerinde de işlem görünmüyor.",Şikâyet,Bankacılık ve finans,Resmî / kurumsal,true
+SYN-0094,Ev interneti için modem değişikliği talebini çevrim içi olarak oluşturabilir miyim?,Soru,Telekomünikasyon,Ayrıntılı anlatım,true
+SYN-0117,Numara taşıma işlemim habersizce ertelendi ve eski hattımda paketim bittiği için iletişimsiz kaldım.,Şikâyet,Telekomünikasyon,Günlük konuşma,true
+SYN-0140,Ekip çalışma alanına davet edilen kişinin erişim düzeyini sonradan değiştirebiliyor muyum?,Soru,Yazılım ve mobil uygulamalar,Yazım varyasyonlu,true
+SYN-0163,"uygulama son guncellemeden sonra surekli oturumu kapatiyor, tekrar giris yapamiyorum.",Şikâyet,Yazılım ve mobil uygulamalar,Kısa ve doğrudan,true
+SYN-0186,Bilet üzerinde yazan peron numarasının değişmesi hâlinde yolculara hangi kanaldan bilgi veriliyor?,Soru,Ulaşım,Resmî / kurumsal,true
+SYN-0209,"metro kartimdan gecis ucreti cekildi ama turnike acilmadi, gorevli de yardim etmedi.",Şikâyet,Ulaşım,Ayrıntılı anlatım,true
+SYN-0232,Kan tahlili için aç gelmek zorunlu mu?,Soru,Sağlık hizmetleri,Günlük konuşma,true
+SYN-0255,"muayene sonrasi verdikleri raporda adim hatali, duzeltme talebime cevap yok.",Şikâyet,Sağlık hizmetleri,Yazım varyasyonlu,true
+SYN-0278,Sahipsiz hayvan ihbarı hangi saatlerde alınıyor?,Soru,Belediye hizmetleri,Kısa ve doğrudan,true
+SYN-0301,Mahalle sakinlerinin yol ve kaldırım sorunlarını harita üzerinde işaretleyip aynı kayda destek verebilmesi yararlı olur.,Öneri,Belediye hizmetleri,Resmî / kurumsal,true
+SYN-0324,Diplomamın basım durumunu çevrim içi sorgulayabilir miyim?,Soru,Eğitim,Ayrıntılı anlatım,true
+SYN-0347,Dersliklerdeki boş bilgisayar ve priz sayısını gösteren canlı bir kampüs haritası hazırlanmasını öneriyorum.,Öneri,Eğitim,Günlük konuşma,true
+SYN-0370,Teslimat için belirlediğim zaman aralığında evde olamazsam yeni gün seçme bağlantısı gönderiliyor mu?,Soru,Kargo ve lojistik,Yazım varyasyonlu,true
+SYN-0393,Hasarlı gönderi bildirimi sırasında fotoğraf ekleyip tutanak durumunu aynı ekrandan takip etmek mümkün olabilir.,Öneri,Kargo ve lojistik,Kısa ve doğrudan,true
+SYN-0416,Otel otoparkının elektrikli araç şarj noktası bulunuyor mu ve kullanım bedeli nasıl hesaplanıyor?,Soru,Restoran ve konaklama,Resmî / kurumsal,true
+SYN-0439,Otel odalarında enerji tasarrufu için misafirin tercihine bağlı havlu ve çarşaf yenileme planı seçeneği sunulabilir.,Öneri,Restoran ve konaklama,Ayrıntılı anlatım,true
+SYN-0012,Uzun süredir aradığım model yeniden stoklara girdiğinde bana haber verilecek mi?,Soru,E-ticaret,Günlük konuşma,true
+SYN-0035,Sepetteki ürünleri fiyat değişimine göre sıralayabilsek bütçeyi yönetmek daha rahat olur.,Öneri,E-ticaret,Yazım varyasyonlu,true
+SYN-0058,eft islemi icin kesilen ucretin hangi tarifeye gore belirlendigini nereden gorebilirim?,Soru,Bankacılık ve finans,Kısa ve doğrudan,true
+SYN-0081,Şube yoğunluğunu uygulamada tahmini bekleme süresiyle göstermeniz müşteri deneyimini geliştirebilir.,Öneri,Bankacılık ve finans,Resmî / kurumsal,true
+SYN-0104,taahhut bitis tarihimi uygulamada hangi menuden gorecegim?,Soru,Telekomünikasyon,Ayrıntılı anlatım,true
+SYN-0127,Fatura uyarısını birkaç gün önce gönderin.,Öneri,Telekomünikasyon,Günlük konuşma,true
+SYN-0150,hesap degisikligi yaptigimda onceki oturumlari uzaktan kapatmanin yolu nedir?,Soru,Yazılım ve mobil uygulamalar,Yazım varyasyonlu,true
+SYN-0173,Klavye kısayolları eklenebilir.,Öneri,Yazılım ve mobil uygulamalar,Kısa ve doğrudan,true
+SYN-0196,"Otobüsümüz mola yerinde fazladan kırk dakika bekledi, sürücü de yolculara hiçbir açıklama yapmadı.",Şikâyet,Ulaşım,Resmî / kurumsal,true
+SYN-0219,Araçlarda USB şarj noktası bulunsun.,Öneri,Ulaşım,Ayrıntılı anlatım,true
+SYN-0242,Laboratuvar örneğimi kaybetmiş; yeniden kan vermem istendi ve kimse yaşanan aksaklık için özür dilemedi.,Şikâyet,Sağlık hizmetleri,Günlük konuşma,true
+SYN-0265,Hastaların farklı kurumlardaki tetkiklerini kendi izinleriyle tek bir sağlık geçmişinde birleştirebilmesi takip kolaylığı sağlar.,Öneri,Sağlık hizmetleri,Yazım varyasyonlu,true
+SYN-0288,"Çöp konteynerleri dolup taşıyor, bildirim yaptığımız hâlde toplama aracı günlerdir uğramıyor.",Şikâyet,Belediye hizmetleri,Kısa ve doğrudan,true
+SYN-0311,Sıcak hava dalgalarında gölgelikli serinleme noktalarını gösteren bir kent haritası hazırlanması iyi bir kamu hizmeti olur.,Öneri,Belediye hizmetleri,Resmî / kurumsal,true
+SYN-0334,"Transkriptimde tamamladığım ders eksik gösterilmiş, düzeltme dilekçeme cevap alamadım.",Şikâyet,Eğitim,Ayrıntılı anlatım,true
+SYN-0357,Maddi güçlük yaşayan öğrenciler için yemek bursu başvurusunun diğer burslardan bağımsız yapılabilmesi erişimi kolaylaştırır.,Öneri,Eğitim,Günlük konuşma,true
+SYN-0380,Dağıtım ekibi adresi bulamadığını yazmış fakat gün boyunca evdeydim ve telefonum hiç çalmadı.,Şikâyet,Kargo ve lojistik,Yazım varyasyonlu,true
+SYN-0403,takip ekranina paketin tahmini teslimat gununu guven araligiyla ekleyin.,Öneri,Kargo ve lojistik,Kısa ve doğrudan,true
+SYN-0426,"Restoranın havalandırması çalışmadığı için içerisi ağır kokuyordu, masamızı değiştirme isteğimiz reddedildi.",Şikâyet,Restoran ve konaklama,Resmî / kurumsal,true
+SYN-0449,otel rezervasyonunda sessiz oda veya manzara tercihini filtre olarak sunmanizi oneriyorum.,Öneri,Restoran ve konaklama,Ayrıntılı anlatım,true
+SYN-0022,Siparişim günlerdir hazırlanıyor aşamasında takılı kaldı; teslimat tarihi de açıklama yapılmadan geçti.,Şikâyet,E-ticaret,Günlük konuşma,true
+SYN-0045,kullanicilarin teslimat icin uygun gun araligi belirleyebilecegi bir takvim olsa iyi olur.,Öneri,E-ticaret,Yazım varyasyonlu,true
+SYN-0068,Mobil uygulama gün boyu açılmadığı için kendi paramı kullanamadım.,Şikâyet,Bankacılık ve finans,Kısa ve doğrudan,true
+SYN-0091,Taahhüdüm sona erdiğinde mevcut paketimin hangi ücret üzerinden devam edeceğini nereden öğrenebilirim?,Soru,Telekomünikasyon,Resmî / kurumsal,true
+SYN-0114,Çağrı merkezinde aynı bilgileri tekrar tekrar anlatmak zorunda kalıyorum.,Şikâyet,Telekomünikasyon,Ayrıntılı anlatım,true
+SYN-0137,Dışa aktarılan raporların tarih aralığını gün bazında değil saat bazında seçebilmem mümkün mü?,Soru,Yazılım ve mobil uygulamalar,Günlük konuşma,true
+SYN-0160,"Ücretli sürüme geçtim, buna rağmen reklamlar ekrandan kalkmadı ve destek ekibi ödeme kaydını bulamadı.",Şikâyet,Yazılım ve mobil uygulamalar,Yazım varyasyonlu,true
+SYN-0183,Şehirler arası otobüste çocuk yolcular için ayrı koltuk ve emniyet kemeri sağlanıyor mu?,Soru,Ulaşım,Kısa ve doğrudan,true
+SYN-0206,Bagajım başka şehre gönderilmiş; kayıp eşya birimi başvurumu günlerdir sonuçlandırmıyor.,Şikâyet,Ulaşım,Resmî / kurumsal,true
+SYN-0229,Ameliyat öncesi istenen tetkiklerin sonuçları aynı hastane hesabında birlikte görüntüleniyor mu?,Soru,Sağlık hizmetleri,Ayrıntılı anlatım,true
+SYN-0252,"Acil serviste yönlendirme yapılmadığı için yanlış bölümde bekledim, durumum kötüleşti.",Şikâyet,Sağlık hizmetleri,Günlük konuşma,true
+SYN-0275,Park alanında etkinlik düzenlemek için önceden izin alınması gerekiyor mu?,Soru,Belediye hizmetleri,Yazım varyasyonlu,true
+SYN-0298,"cop konteynerleri tasiyor, sicakta koku dayanilmaz hale geldi.",Şikâyet,Belediye hizmetleri,Kısa ve doğrudan,true
+SYN-0321,Uzaktan eğitim derslerinin kayıtlarına dönem bittikten sonra da erişebiliyor muyuz?,Soru,Eğitim,Resmî / kurumsal,true
+SYN-0344,"sinav salonunda gosterilen saat yanlisti, suremizin bir kismi bosa gitti.",Şikâyet,Eğitim,Ayrıntılı anlatım,true
+SYN-0367,Kurye hafta sonu dağıtım yapıyor mu?,Soru,Kargo ve lojistik,Günlük konuşma,true
+SYN-0390,"dagitim yapilmadan adreste bulunamadi kaydi dusulmus, butun gun evdeydim.",Şikâyet,Kargo ve lojistik,Yazım varyasyonlu,true
+SYN-0413,Masaya servis için rezervasyon yaptırabilir miyim?,Soru,Restoran ve konaklama,Kısa ve doğrudan,true
+SYN-0436,Menüye her yemeğin yanında porsiyon büyüklüğü ve alerjen bilgisini aynı simge düzeniyle eklemenizi öneriyorum.,Öneri,Restoran ve konaklama,Resmî / kurumsal,true
+SYN-0009,Hediye kartımda kalan tutarı nereden öğrenirim?,Soru,E-ticaret,Ayrıntılı anlatım,true
+SYN-0032,İade talebinin her aşamasında tahmini tamamlanma tarihini gösteren bir durum çizelgesi sunulabilir.,Öneri,E-ticaret,Günlük konuşma,true
+SYN-0055,"Kart borcumu erken kapatırsam sonraki ekstrede faiz hesabı nasıl değişir, bunu önceden öğrenebilir miyim?",Soru,Bankacılık ve finans,Yazım varyasyonlu,true
+SYN-0078,Düzenli ödemelerin aylık toplamını gösteren bir özet ekranı müşterilerin nakit akışını planlamasına yardımcı olabilir.,Öneri,Bankacılık ve finans,Kısa ve doğrudan,true
+SYN-0101,"Hafta sonu teknik ekip randevusu oluşturulabiliyor mu, uygun saatleri nereden seçebilirim?",Soru,Telekomünikasyon,Resmî / kurumsal,true
+SYN-0124,Tarife değişikliğini tamamlamadan önce eski ve yeni paketin toplam maliyetini sade bir ekranda karşılaştırabiliriz.,Öneri,Telekomünikasyon,Ayrıntılı anlatım,true
+SYN-0147,Ekran okuyucu kullananlar için uygulamanın erişilebilirlik uyumluluğu hangi standartla açıklanıyor?,Soru,Yazılım ve mobil uygulamalar,Günlük konuşma,true
+SYN-0170,Çok adımlı formlarda ilerleme yüzdesi ve tahmini kalan süre gösterilirse kullanıcı süreci daha rahat takip eder.,Öneri,Yazılım ve mobil uygulamalar,Yazım varyasyonlu,true
+SYN-0193,tren biletindeki koltuk numarasini yolculuktan once degistirmek mumkun mu?,Soru,Ulaşım,Kısa ve doğrudan,true
+SYN-0216,Bisiklet ve toplu taşıma bağlantılarını birlikte planlayan bir rota ekranı geliştirilmesi yararlı olacaktır.,Öneri,Ulaşım,Resmî / kurumsal,true
+SYN-0239,randevu degisikligi icin telefonla aramak yerine internetten islem yapabilir miyim?,Soru,Sağlık hizmetleri,Ayrıntılı anlatım,true
+SYN-0262,Bekleme süresini gösterin.,Öneri,Sağlık hizmetleri,Günlük konuşma,true
+SYN-0285,ikametgah degisikligi sonrasi su aboneligini internetten tasimak mumkun mu?,Soru,Belediye hizmetleri,Yazım varyasyonlu,true
+SYN-0308,Yaya geçitlerini daha görünür boyayın.,Öneri,Belediye hizmetleri,Kısa ve doğrudan,true
+SYN-0331,Harç ödemesini yaptım ama öğrenci sisteminde borç göründüğü için ders kaydım tamamlanmıyor.,Şikâyet,Eğitim,Resmî / kurumsal,true
+SYN-0354,Yurt çamaşır makinelerini uygulamadan takip edelim.,Öneri,Eğitim,Ayrıntılı anlatım,true
+SYN-0377,"Şubeye bıraktığım iade kolisi sisteme işlenmemiş, kayıp gönderi başvurum günlerdir bekliyor.",Şikâyet,Kargo ve lojistik,Günlük konuşma,true
+SYN-0400,Toplu gönderi müşterilerine koli başına barkod basmak yerine tek listeden çoklu etiket üretme aracı sağlanabilir.,Öneri,Kargo ve lojistik,Yazım varyasyonlu,true
+SYN-0423,Hesaba sipariş etmediğim içecekler eklenmiş ve itiraz ettiğimde çalışanlar kaba davrandı.,Şikâyet,Restoran ve konaklama,Kısa ve doğrudan,true
+SYN-0446,Mutfak yoğunluğuna göre gerçekçi teslimat aralığı veren bir sistem kurulması müşterinin beklentisini doğru yönetir.,Öneri,Restoran ve konaklama,Resmî / kurumsal,true
+SYN-0019,Kampanya fiyatıyla aldığım ürünün yerine daha ucuz bir model gönderilmiş; talebime de yanıt alamadım.,Şikâyet,E-ticaret,Ayrıntılı anlatım,true
+SYN-0042,"Küçük satıcıların performansını yalnızca puanla değil, zamanında teslimat oranıyla da göstermeyi değerlendirebilirsiniz.",Öneri,E-ticaret,Günlük konuşma,true
+SYN-0065,"Yurt dışındaki hesaba gönderdiğim tutar, alıcı bankanın açıklanmayan masrafları nedeniyle eksik ulaşmış; dekontta kesintinin kaynağı görünmüyor.",Şikâyet,Bankacılık ve finans,Yazım varyasyonlu,true
+SYN-0088,mobil uygulamaya aylik harcama limiti icin kisisel uyari esigi koyma ozelligi eklenebilir.,Öneri,Bankacılık ve finans,Kısa ve doğrudan,true
+SYN-0111,İnternet hızım sözleşmede yazanın çok altında; ölçüm kayıtlarını göndermeme rağmen sorun çözülmedi.,Şikâyet,Telekomünikasyon,Resmî / kurumsal,true
+SYN-0134,modem arayuzune teknik bilgi bilmeyenler icin kolay kurulum sihirbazi koyulabilir.,Öneri,Telekomünikasyon,Ayrıntılı anlatım,true
+SYN-0157,Uygulama açılırken donuyor.,Şikâyet,Yazılım ve mobil uygulamalar,Günlük konuşma,true
+SYN-0180,masaustu surumunde birden fazla pencereyi yan yana kullanmak icin duzen secenekleri olsun.,Öneri,Yazılım ve mobil uygulamalar,Yazım varyasyonlu,true
+SYN-0203,Koltuk numaram başka yolcuya da verilmiş.,Şikâyet,Ulaşım,Kısa ve doğrudan,true
+SYN-0226,Tahlil sonucumun hekim tarafından onaylanıp onaylanmadığını hasta portalında nereden görebilirim?,Soru,Sağlık hizmetleri,Resmî / kurumsal,true
+SYN-0249,Reçete bilgilerim eksik girilmiş.,Şikâyet,Sağlık hizmetleri,Ayrıntılı anlatım,true
+SYN-0272,Yeni bir geri dönüşüm kutusu talebi için belediyenin hangi birimine başvurmam gerekiyor?,Soru,Belediye hizmetleri,Günlük konuşma,true
+SYN-0295,Asfalt yenileme çalışması bitti denmesine rağmen yolda derin çukurlar kaldı ve araçlarımız zarar gördü.,Şikâyet,Belediye hizmetleri,Yazım varyasyonlu,true
+SYN-0318,Mezuniyet için gerekli kredi toplamını öğrenci bilgi sisteminde hangi ekrandan görebilirim?,Soru,Eğitim,Kısa ve doğrudan,true
+SYN-0341,Engelli erişimi için ayrılan asansör kilitliydi ve sınav salonuna ulaşmakta ciddi güçlük yaşadım.,Şikâyet,Eğitim,Resmî / kurumsal,true
+SYN-0364,Paketin teslim alınması sırasında alıcı adına yetki belgesi düzenlemek için hangi koşullar aranıyor?,Soru,Kargo ve lojistik,Ayrıntılı anlatım,true
+SYN-0387,Adres değişikliği onaylandı denmesine karşın paket eski adrese götürülmüş ve geri getirilmesi için benden ücret isteniyor.,Şikâyet,Kargo ve lojistik,Günlük konuşma,true
+SYN-0410,Oda rezervasyonumu giriş tarihinden önce farklı bir kişiye devretme koşulları nelerdir?,Soru,Restoran ve konaklama,Yazım varyasyonlu,true
+SYN-0433,"garson siparisimizi unutmus, bir saat bekledikten sonra hala mutfaga iletilmedigini ogrendik.",Şikâyet,Restoran ve konaklama,Kısa ve doğrudan,true
+SYN-0006,Faturayı şirket adına düzenletmek için siparişi vermeden önce hangi bilgileri girmeliyim?,Soru,E-ticaret,Resmî / kurumsal,true
+SYN-0029,"beden degisimi icin olusturdugum talep sebepsiz yere kapatilmis, kimse aciklama yapmiyor.",Şikâyet,E-ticaret,Ayrıntılı anlatım,true
+SYN-0052,Havale için günlük bir üst limit var mı?,Soru,Bankacılık ve finans,Günlük konuşma,true
+SYN-0075,atm para vermedi fakat hesaptan dusum yapti; iki haftadir inceleme sonucu bekliyorum.,Şikâyet,Bankacılık ve finans,Yazım varyasyonlu,true
+SYN-0098,Hat taşıma başvurusu için bayiye gitmem gerekiyor mu?,Soru,Telekomünikasyon,Kısa ve doğrudan,true
+SYN-0121,Paket yenilenmeden birkaç gün önce yeni ücretin ve içerik değişikliklerinin karşılaştırmalı gösterilmesi şeffaflığı artırır.,Öneri,Telekomünikasyon,Resmî / kurumsal,true
+SYN-0144,Dosya yükleme için desteklenen uzantılar hangileri?,Soru,Yazılım ve mobil uygulamalar,Ayrıntılı anlatım,true
+SYN-0167,Silinen dosyalar için süreli bir geri dönüşüm alanı oluşturulmasını öneriyorum.,Öneri,Yazılım ve mobil uygulamalar,Günlük konuşma,true
+SYN-0190,Gece seferinde tekerlekli sandalye kullanan yolcu için önceden yardım talebi oluşturabiliyor muyum?,Soru,Ulaşım,Yazım varyasyonlu,true
+SYN-0213,Duraklarda sesli ve görsel olarak aynı anda çalışan varış bilgilendirmeleri bulunması erişilebilirliği artırır.,Öneri,Ulaşım,Kısa ve doğrudan,true
+SYN-0236,Farklı bir hastanede çekilen görüntüleme kaydını yeni doktorumun erişimine açabilir miyim?,Soru,Sağlık hizmetleri,Resmî / kurumsal,true
+SYN-0259,"Tahlil sonuçlarında yalnızca sayısal değer değil, anlaşılır bir açıklama ve hekime danışılması gereken durumlar da belirtilebilir.",Öneri,Sağlık hizmetleri,Ayrıntılı anlatım,true
+SYN-0282,Belediye otobüslerinde kayıp eşya teslim noktası hangi hizmet binasında bulunuyor?,Soru,Belediye hizmetleri,Günlük konuşma,true
+SYN-0305,Toplu taşıma duraklarına yağmur suyu birikmesini önleyen drenaj düzenekleri eklenmesi bekleme konforunu artıracaktır.,Öneri,Belediye hizmetleri,Yazım varyasyonlu,true
+SYN-0328,ders notlarinin ilan edilmesi icin belirli bir son tarih var mi?,Soru,Eğitim,Kısa ve doğrudan,true
+SYN-0351,Mezuniyet kontrolünü dönem başında otomatik yapan bir uyarı sistemi kurulması son dakika sorunlarını önleyebilir.,Öneri,Eğitim,Resmî / kurumsal,true
+SYN-0374,kargo ucretini alici yerine gonderici olarak odedigimi nasil dogrularim?,Soru,Kargo ve lojistik,Ayrıntılı anlatım,true
+SYN-0397,Kuryenin gelişinden önce kısa mesaj yollayın.,Öneri,Kargo ve lojistik,Günlük konuşma,true
+SYN-0420,rezervasyonumu iptal edersem kapora iadesi hangi kosullarda yapiliyor?,Soru,Restoran ve konaklama,Yazım varyasyonlu,true
+SYN-0443,Menü yazılarını büyütün.,Öneri,Restoran ve konaklama,Kısa ve doğrudan,true
+SYN-0016,Ödemeyi iki kez tahsil ettiniz; dekontu iletmeme rağmen ikinci çekim hâlâ hesabıma geri yatırılmadı.,Şikâyet,E-ticaret,Resmî / kurumsal,true
+SYN-0039,Hediye paketine kısa bir not yazma alanı eklenebilir.,Öneri,E-ticaret,Ayrıntılı anlatım,true
+SYN-0062,ATM para sayarken cihaz kapandı ve yatırdığım tutar bakiyeme geçmedi; şube de sorumluluk almıyor.,Şikâyet,Bankacılık ve finans,Günlük konuşma,true
+SYN-0085,Finansal okuryazarlık için işlem ekranlarında kısa ve sade açıklama kartları bulunması yararlı olacaktır.,Öneri,Bankacılık ve finans,Yazım varyasyonlu,true
+SYN-0108,"Müşteri temsilcisi tarife değişikliğini onayladığımı söyledi, oysa görüşmede böyle bir talebim olmadı.",Şikâyet,Telekomünikasyon,Kısa ve doğrudan,true
+SYN-0131,İnternet kullanımı yoğun saatlerde hız düşüşü yaşanıyorsa bunu müşteriye önceden bildiren bir gösterge sunulabilir.,Öneri,Telekomünikasyon,Resmî / kurumsal,true
+SYN-0154,Güncellemeden sonra yazı boyutu kendi kendine küçüldü ve ayarlardan eski görünümü geri getiremiyorum.,Şikâyet,Yazılım ve mobil uygulamalar,Ayrıntılı anlatım,true
+SYN-0177,Kullanıcı testlerine katılanların erişilebilirlik sorunlarını doğrudan işaretleyebileceği bir geri bildirim alanı açılabilir.,Öneri,Yazılım ve mobil uygulamalar,Günlük konuşma,true
+SYN-0200,Sefer iptal edildiği hâlde bilet bedelinin iadesi için haftalardır bekletiliyorum.,Şikâyet,Ulaşım,Yazım varyasyonlu,true
+SYN-0223,sefer gecikmelerinde tahmini varis saatini uygulamada surekli guncelleyin.,Öneri,Ulaşım,Kısa ve doğrudan,true
+SYN-0246,Doktor değişikliği haber verilmeden yapılmış ve önceki tetkiklerim yeni hekim tarafından görülmemiş.,Şikâyet,Sağlık hizmetleri,Resmî / kurumsal,true
+SYN-0269,yasli hastalar icin buyuk puntolu ve sesli okunabilen bilgilendirme secenegi eklenebilir.,Öneri,Sağlık hizmetleri,Ayrıntılı anlatım,true
+SYN-0292,Kaldırım taşları yerinden çıkmış; takılıp düşme tehlikesi yaratmasına rağmen bildirimimiz sonuçsuz kaldı.,Şikâyet,Belediye hizmetleri,Günlük konuşma,true
+SYN-0315,belediye uygulamasina basvurumun hangi masada oldugunu gosteren takip ekleyin.,Öneri,Belediye hizmetleri,Yazım varyasyonlu,true
+SYN-0338,Yemekhane kuyruğu her gün ders saatine taşıyor ve zamanında öğle yemeği yiyemiyoruz.,Şikâyet,Eğitim,Kısa ve doğrudan,true
+SYN-0361,Gönderimin aktarma merkezine ulaştığı saat ile dağıtıma çıkış saati arasında hangi işlem basamakları bulunuyor?,Soru,Kargo ve lojistik,Resmî / kurumsal,true
+SYN-0384,Kurye teslimat saatini haber vermedi.,Şikâyet,Kargo ve lojistik,Ayrıntılı anlatım,true
+SYN-0407,"Otel rezervasyonunda kahvaltı seçeneği oda fiyatına dahil mi, yoksa girişte ayrıca mı ödeniyor?",Soru,Restoran ve konaklama,Günlük konuşma,true
+SYN-0430,Önceden ödediğim konaklama ücretine çıkışta yeniden tahsilat yapılmış; banka belgesini göstermeme rağmen kayıt açılmadı.,Şikâyet,Restoran ve konaklama,Yazım varyasyonlu,true
+SYN-0003,"Ürün sayfasında görünen garanti süresi üretici garantisini mi, satıcı güvencesini mi ifade ediyor?",Soru,E-ticaret,Kısa ve doğrudan,true
+SYN-0026,İade kargosunu teslim edeli on iki gün oldu; ücretim yatmadığı için aynı tutarı ikinci kez ödemek zorunda kaldım.,Şikâyet,E-ticaret,Resmî / kurumsal,true
+SYN-0049,ATM kartımı yuttuğunda kartın şubeye gönderilmesini beklemeden yenisini talep edebilir miyim?,Soru,Bankacılık ve finans,Ayrıntılı anlatım,true
+SYN-0072,Şifre yenileme bağlantısı çalışmadığı için hesabıma erişemiyorum ve destek hattı sürekli meşgul.,Şikâyet,Bankacılık ve finans,Günlük konuşma,true
+SYN-0095,Numaramı başka operatöre taşıdığımda kullanılmamış paket hakkımın durumu ne olur?,Soru,Telekomünikasyon,Yazım varyasyonlu,true
+SYN-0118,"ev interneti uc gundur yok, ariza ekibi gelmeden kaydi cozuldu diye kapatmislar.",Şikâyet,Telekomünikasyon,Kısa ve doğrudan,true
+SYN-0141,Oturum açma sırasında kullanılan doğrulama kodu e-posta yerine kimlik doğrulayıcı uygulamadan alınabiliyor mu?,Soru,Yazılım ve mobil uygulamalar,Resmî / kurumsal,true
+SYN-0164,"arama ekraninda yazdiklarim kayboluyor, filtre secenekleri de bazen acilmiyor.",Şikâyet,Yazılım ve mobil uygulamalar,Ayrıntılı anlatım,true
+SYN-0187,Öğrenci indirimi hızlı trenlerde de geçerli mi?,Soru,Ulaşım,Günlük konuşma,true
+SYN-0210,"sefer iptalini duraga geldigimde ogrendim, baska ulasim bulmak icin uzun sure ugrastim.",Şikâyet,Ulaşım,Yazım varyasyonlu,true
+SYN-0233,Raporumu e-Devlet üzerinden alabilir miyim?,Soru,Sağlık hizmetleri,Kısa ve doğrudan,true
+SYN-0256,Hasta portalına ilaç kullanım saatlerini kişisel takvime aktarabilen bir hatırlatma özelliği eklenmesini öneriyorum.,Öneri,Sağlık hizmetleri,Resmî / kurumsal,true
+SYN-0279,Pazar yeri tahsis başvuruları ne zaman açılıyor?,Soru,Belediye hizmetleri,Ayrıntılı anlatım,true
+SYN-0302,Çöp toplama araçlarının tahmini varış saatini gösteren bir mahalle ekranı oluşturulmasını öneriyorum.,Öneri,Belediye hizmetleri,Günlük konuşma,true
+SYN-0325,Sınav çakışması yaşandığında mazeret sınavı başvurusu için hangi belge isteniyor?,Soru,Eğitim,Yazım varyasyonlu,true
+SYN-0348,Öğrencilerin resmi duyuruları takvimlerine tek dokunuşla ekleyebilmesi tarih kaçırmalarını azaltır.,Öneri,Eğitim,Kısa ve doğrudan,true
+SYN-0371,Toplu gönderi yapan işletmeler için düzenli kurye alım saati tanımlanabiliyor mu?,Soru,Kargo ve lojistik,Resmî / kurumsal,true
+SYN-0394,Alıcının uygun olmadığı günleri önceden işaretleyebildiği bir teslimat takvimi geliştirilmesi faydalı olacaktır.,Öneri,Kargo ve lojistik,Ayrıntılı anlatım,true
+SYN-0417,Toplu yemek rezervasyonunda kişi sayısını son güne kadar değiştirebilir miyim?,Soru,Restoran ve konaklama,Günlük konuşma,true
+SYN-0440,Restoranların çocuklu aileler için mama sandalyesi ve oyun alanı uygunluğunu önceden filtreleyebilmesi faydalı olur.,Öneri,Restoran ve konaklama,Yazım varyasyonlu,true
+SYN-0013,"iade onayindan sonra para kac is gununde hesabima gecer, sureyi nereden takip edebilirim?",Soru,E-ticaret,Kısa ve doğrudan,true
+SYN-0036,Dijital faturaların e-posta yanında doğrudan muhasebe yazılımına aktarılabilmesi yararlı olabilir.,Öneri,E-ticaret,Resmî / kurumsal,true
+SYN-0059,Mobil bankacılıkta biyometrik giriş kullanmak için cihazımı önceden güvenilir cihaz olarak tanımlamam gerekiyor mu?,Soru,Bankacılık ve finans,Ayrıntılı anlatım,true
+SYN-0082,Kart limitini uygulamadan değiştirebilmek iyi olur.,Öneri,Bankacılık ve finans,Günlük konuşma,true
+SYN-0105,sabit internet basvurusu yaptigim adreste kurulum icin hangi evraklar isteniyor?,Soru,Telekomünikasyon,Yazım varyasyonlu,true
+SYN-0128,Paket aşımında veri kullanımını otomatik durdurma ayarı koyun.,Öneri,Telekomünikasyon,Kısa ve doğrudan,true
+SYN-0151,Son sürümden beri dosya eklerken uygulama kapanıyor; yeniden yüklemek de sorunu gidermedi.,Şikâyet,Yazılım ve mobil uygulamalar,Resmî / kurumsal,true
+SYN-0174,Profil fotoğrafı kırpma aracını iyileştirin.,Öneri,Yazılım ve mobil uygulamalar,Ayrıntılı anlatım,true
+SYN-0197,Uçuş saati iki kez değişti ve son bildirim kapıya yöneldikten sonra geldi; bağlantılı seferimi kaçırdım.,Şikâyet,Ulaşım,Günlük konuşma,true
+SYN-0220,Aktarma merkezlerinde yönlendirme tabelalarını renk ve simgelerle standartlaştırırsanız ziyaretçiler daha kolay yol bulur.,Öneri,Ulaşım,Yazım varyasyonlu,true
+SYN-0243,"Hasta portalındaki rapor yanlış kişiye ait görünüyor, düzeltme talebim de açıkta bırakılmış.",Şikâyet,Sağlık hizmetleri,Kısa ve doğrudan,true
+SYN-0266,Hekim görüşmesi sonrasında verilen talimatların sade dilde özetlendiği bir dijital çıktı hazırlanması yanlış anlamaları azaltır.,Öneri,Sağlık hizmetleri,Resmî / kurumsal,true
+SYN-0289,"Parktaki çocuk oyun grubunun kırık parçaları haftalardır onarılmadı, alan güvenli değil.",Şikâyet,Belediye hizmetleri,Ayrıntılı anlatım,true
+SYN-0312,Mahalle toplantılarının gündem ve sonuçlarının erişilebilir bir sayfada arşivlenmesini öneriyorum.,Öneri,Belediye hizmetleri,Günlük konuşma,true
+SYN-0335,Online sınav sırasında sistem bağlantımı kesti ve süreyi geri vermedi; itirazım incelenmeden reddedildi.,Şikâyet,Eğitim,Yazım varyasyonlu,true
+SYN-0358,ders kayit ekraninda secilen derslerin haftalik programini aninda onizleme olarak gosterin.,Öneri,Eğitim,Kısa ve doğrudan,true
+SYN-0381,Teslimat için ek ücret tahsil edildiği hâlde gönderi şubeden alınmak zorunda bırakıldı.,Şikâyet,Kargo ve lojistik,Resmî / kurumsal,true
+SYN-0404,sube yogunlugunu gosteren bir sistemle insanlar bosuna sira beklemez.,Öneri,Kargo ve lojistik,Ayrıntılı anlatım,true
+SYN-0427,Sipariş eksik geldi.,Şikâyet,Restoran ve konaklama,Günlük konuşma,true
+SYN-0450,restoranlarda kalan yemekleri guvenli paketle eve goturmek icin standart bir secenek olsun.,Öneri,Restoran ve konaklama,Yazım varyasyonlu,true
+SYN-0023,Ürün açıklamasındaki ölçülerle gelen ürünün ölçüleri birbirini tutmuyor.,Şikâyet,E-ticaret,Kısa ve doğrudan,true
+SYN-0046,Vadeli hesabın vade sonunda otomatik yenilenmesi durumunda yeni faiz oranını hangi kanaldan görebilirim?,Soru,Bankacılık ve finans,Resmî / kurumsal,true
+SYN-0069,Döviz bozdurma sırasında ekranda gösterilenden daha düşük bir tutar hesabıma geçti.,Şikâyet,Bankacılık ve finans,Ayrıntılı anlatım,true
+SYN-0092,Yeni adrese taşınırken fiber altyapı uygunluğu kesin olarak hangi aşamada doğrulanıyor?,Soru,Telekomünikasyon,Günlük konuşma,true
+SYN-0115,Taahhüt iptali için istenen cayma bedeli açıklanan tutarın çok üzerinde çıktı; hesaplamayı paylaşmıyorsunuz.,Şikâyet,Telekomünikasyon,Yazım varyasyonlu,true
+SYN-0138,Uygulamada saklanan dosyaların sunucudan ne zaman silineceğine ilişkin bir saklama politikası var mı?,Soru,Yazılım ve mobil uygulamalar,Kısa ve doğrudan,true
+SYN-0161,Dosya dışa aktarımında Türkçe karakterler bozuk çıkıyor; aynı raporu her seferinde yeniden düzenliyorum.,Şikâyet,Yazılım ve mobil uygulamalar,Resmî / kurumsal,true
+SYN-0184,Metro kartımdaki kullanılmamış bakiyeyi başka bir karta aktarabiliyor muyum?,Soru,Ulaşım,Ayrıntılı anlatım,true
+SYN-0207,Engelli yolcu yardımını önceden onayladılar ancak istasyonda görevli bulunmadığı için araca binemedim.,Şikâyet,Ulaşım,Günlük konuşma,true
+SYN-0230,Diş randevumu iptal edersem aynı bölümden yeni tarih seçmek için bekleme süresi uygulanıyor mu?,Soru,Sağlık hizmetleri,Yazım varyasyonlu,true
+SYN-0253,"randevu saatim degistirilmis ama bana hic bildirim gelmedi, hastaneye bosuna geldim.",Şikâyet,Sağlık hizmetleri,Kısa ve doğrudan,true
+SYN-0276,Yol çalışması sırasında kapatılan güzergâhın alternatifini belediye duyurularından nasıl takip ederim?,Soru,Belediye hizmetleri,Resmî / kurumsal,true
+SYN-0299,"mahalledeki kaldirim kazisi aylardir kapatilmedi, bebek arabasiyla gecemiyoruz.",Şikâyet,Belediye hizmetleri,Ayrıntılı anlatım,true
+SYN-0322,Başarı bursu değerlendirmesinde son iki dönemin not ortalaması mı esas alınıyor?,Soru,Eğitim,Günlük konuşma,true
+SYN-0345,diploma basvurum eksik belge gerekcesiyle reddedilmis ama hangi belge oldugu yazmiyor.,Şikâyet,Eğitim,Yazım varyasyonlu,true
+SYN-0368,Paketimin desi ölçüsünü nereden görebilirim?,Soru,Kargo ve lojistik,Kısa ve doğrudan,true
+SYN-0391,Teslimat öncesinde müşterinin kurye için güvenli bırakma noktası seçebilmesi gereksiz başarısız teslimatları azaltır.,Öneri,Kargo ve lojistik,Resmî / kurumsal,true
+SYN-0414,Geç çıkış talebinde ek ücret uygulanıyor mu?,Soru,Restoran ve konaklama,Ayrıntılı anlatım,true
+SYN-0437,Rezervasyon tamamlandıktan sonra özel ihtiyaçların karşılanıp karşılanmadığını gösteren bir kontrol özeti sunulabilir.,Öneri,Restoran ve konaklama,Günlük konuşma,true
+SYN-0010,Kutuyu açmadan ürünün renk ve beden bilgisini doğrulayabileceğim bir etiket var mı acaba?,Soru,E-ticaret,Yazım varyasyonlu,true
+SYN-0033,Tekrar satın alınan ürünler için önceki teslimat adresini seçmeye yarayan bir kısayol alışverişi kolaylaştırır.,Öneri,E-ticaret,Kısa ve doğrudan,true
+SYN-0056,Banka kartımın temassız özelliğini yurt dışında da kullanabiliyor muyum?,Soru,Bankacılık ve finans,Resmî / kurumsal,true
+SYN-0079,Birikim hedefi belirleyip her ay otomatik küçük tutarlar ayıran bir özellik özellikle yeni tasarruf sahiplerine fayda sağlar.,Öneri,Bankacılık ve finans,Ayrıntılı anlatım,true
+SYN-0102,Aile paketindeki diğer hatların kalan internet miktarı tek ekranda görüntülenebilir mi?,Soru,Telekomünikasyon,Günlük konuşma,true
+SYN-0125,Evde bağlantı kalitesini oda oda ölçen bir uygulama aracı eklenirse kullanıcılar modem konumunu daha iyi ayarlayabilir.,Öneri,Telekomünikasyon,Yazım varyasyonlu,true
+SYN-0148,bildirimleri sadece belirli saatlerde almak icin zaman araligi tanimlayabilir miyim?,Soru,Yazılım ve mobil uygulamalar,Kısa ve doğrudan,true
+SYN-0171,Hata ekranlarında teknik kodun yanında günlük dille yazılmış bir çözüm önerisi de sunmanızı tavsiye ederim.,Öneri,Yazılım ve mobil uygulamalar,Resmî / kurumsal,true
+SYN-0194,otobus terminalinde kayip esya basvurusu hangi birime yapiliyor?,Soru,Ulaşım,Ayrıntılı anlatım,true
+SYN-0217,Duraklara gölgelik ekleyin.,Öneri,Ulaşım,Günlük konuşma,true
+SYN-0240,engelli hasta icin muayene oncesi refakatci kaydi olusturuluyor mu?,Soru,Sağlık hizmetleri,Yazım varyasyonlu,true
+SYN-0263,Çocuk polikliniğine ayrı sıra açın.,Öneri,Sağlık hizmetleri,Kısa ve doğrudan,true
+SYN-0286,"Sokağımızdaki rögar günlerdir taşıyor, kötü koku apartman girişine kadar yayıldı ve ekip gelmedi.",Şikâyet,Belediye hizmetleri,Resmî / kurumsal,true
+SYN-0309,Geri dönüşüm kutularını artırın.,Öneri,Belediye hizmetleri,Ayrıntılı anlatım,true
+SYN-0332,Derslik değişikliği son dakika duyuruldu; eski binaya giden öğrenciler yoklama yüzünden mağdur oldu.,Şikâyet,Eğitim,Günlük konuşma,true
+SYN-0355,Kütüphane grup çalışma odaları için çevrim içi rezervasyon ve doluluk takvimi sunulması verimli olur.,Öneri,Eğitim,Yazım varyasyonlu,true
+SYN-0378,Kurye ağır paketi kapıya çıkarmayı reddedip aşağı inmemi istedi; ücretini eve teslim için ödemiştim.,Şikâyet,Kargo ve lojistik,Kısa ve doğrudan,true
+SYN-0401,Teslimat gecikmesi beklenen gönderiler için alıcıya yeni tarih seçenekleri sunulması güveni artırır.,Öneri,Kargo ve lojistik,Resmî / kurumsal,true
+SYN-0424,Rezervasyonum onaylı görünüyordu ancak otele vardığımızda boş oda bulunmadığını söylediler.,Şikâyet,Restoran ve konaklama,Ayrıntılı anlatım,true
+SYN-0447,Misafirlerin giriş öncesinde oda sıcaklığı ve yastık tercihini belirleyebilmesi konaklama deneyimini kişiselleştirir.,Öneri,Restoran ve konaklama,Günlük konuşma,true
+SYN-0020,"Paketin içinden sipariş ettiğim ürün yerine alakasız bir aksesuar çıktı, kontrol süreciniz işlemiyor.",Şikâyet,E-ticaret,Yazım varyasyonlu,true
+SYN-0043,favori listesine fiyat dusunce bildirim gonderme secenegi ekleseniz cok kullanisli olur.,Öneri,E-ticaret,Kısa ve doğrudan,true
+SYN-0066,"Şubede sıra numaram birkaç kez atlandı, görevli sorunu çözmek yerine ters bir üslupla konuştu.",Şikâyet,Bankacılık ve finans,Resmî / kurumsal,true
+SYN-0089,dekontlari birden fazla formatta indirebilmek kullanicilar icin pratik olur.,Öneri,Bankacılık ve finans,Ayrıntılı anlatım,true
+SYN-0112,Hattım aniden servis dışı kaldı.,Şikâyet,Telekomünikasyon,Günlük konuşma,true
+SYN-0135,paketleri sadece fiyatla degil kapsadiklari hizmetlerle yan yana gostermek karar vermeyi kolaylastirir.,Öneri,Telekomünikasyon,Yazım varyasyonlu,true
+SYN-0158,Kaydet düğmesi bazen hiçbir tepki vermiyor.,Şikâyet,Yazılım ve mobil uygulamalar,Kısa ve doğrudan,true
+SYN-0181,Aldığım tren biletini aynı gün içindeki daha erken bir sefere ücret farkıyla değiştirebilir miyim?,Soru,Ulaşım,Resmî / kurumsal,true
+SYN-0204,Durakta sefer bilgisi gösteren ekran kapalı.,Şikâyet,Ulaşım,Ayrıntılı anlatım,true
+SYN-0227,Uzman hekim randevusu alabilmek için önce aile hekimi yönlendirmesi gerekli mi?,Soru,Sağlık hizmetleri,Günlük konuşma,true
+SYN-0250,Tahlil için aç kalmam söylendi ancak laboratuvarın kapalı olduğu son anda bildirildi; bütün sabahım boşa gitti.,Şikâyet,Sağlık hizmetleri,Yazım varyasyonlu,true
+SYN-0273,Sokak aydınlatma arızalarının takip numarasıyla sorgulanabildiği bir çevrim içi ekran var mı?,Soru,Belediye hizmetleri,Kısa ve doğrudan,true
+SYN-0296,Engelli rampasının önüne sürekli araç park ediliyor; zabıtaya bildirdiğim konu için işlem yapılmadı.,Şikâyet,Belediye hizmetleri,Resmî / kurumsal,true
+SYN-0319,Kütüphanenin sınav haftasındaki çalışma saatleri hafta sonu da uzatılıyor mu?,Soru,Eğitim,Ayrıntılı anlatım,true
+SYN-0342,Ders materyalleri sisteme yüklenmediği hâlde öğretim görevlisi teslim tarihini değiştirmeyi kabul etmedi.,Şikâyet,Eğitim,Günlük konuşma,true
+SYN-0365,Gönderi adresini kurye dağıtıma çıkmadan önce farklı bir şubeye yönlendirmek mümkün mü?,Soru,Kargo ve lojistik,Yazım varyasyonlu,true
+SYN-0388,"kuryenin teslim ettigi paket baska daireye birakilmis, icindeki urun eksik cikti.",Şikâyet,Kargo ve lojistik,Kısa ve doğrudan,true
+SYN-0411,Menüde belirtilen porsiyon gramajı pişmiş ürünün ağırlığını mı gösteriyor?,Soru,Restoran ve konaklama,Resmî / kurumsal,true
+SYN-0434,"odada sicak su yoktu, resepsiyon aramalarimiza cevap vermedi.",Şikâyet,Restoran ve konaklama,Ayrıntılı anlatım,true
+SYN-0007,Mağazadan teslim seçeneği bu siparişte kullanılabiliyor mu?,Soru,E-ticaret,Günlük konuşma,true
+SYN-0030,"urun kutusu ezilmis geldi, icindeki cam kavanoz da kirilmis; paketleme gercekten cok kotu.",Şikâyet,E-ticaret,Yazım varyasyonlu,true
+SYN-0053,Kredi kartı ekstrelerimi PDF olarak alabilir miyim?,Soru,Bankacılık ve finans,Kısa ve doğrudan,true
+SYN-0076,Hesap hareketlerinde her harcamanın kullanıcı tarafından eklenen kısa bir notla etiketlenebilmesi bütçe takibini iyileştirir.,Öneri,Bankacılık ve finans,Resmî / kurumsal,true
+SYN-0099,Yeni SIM kartımın teslimat süresini nasıl takip ederim?,Soru,Telekomünikasyon,Ayrıntılı anlatım,true
+SYN-0122,Kesinti yaşanan bölgelerde tahmini onarım zamanını harita üzerinden paylaşmanızı öneriyorum.,Öneri,Telekomünikasyon,Günlük konuşma,true
+SYN-0145,Takvimde oluşturduğum görevi farklı saat dilimindeki ekip arkadaşları aynı yerel saatte mi görüyor?,Soru,Yazılım ve mobil uygulamalar,Yazım varyasyonlu,true
+SYN-0168,Arama geçmişini tek tek silebilmek yerine seçilen tarih aralığına göre temizleme seçeneği eklenebilir.,Öneri,Yazılım ve mobil uygulamalar,Kısa ve doğrudan,true
+SYN-0191,İptal edilen uçuşun yerine sunulan alternatif seferi kabul etmeden önce diğer seçenekleri görebilir miyim?,Soru,Ulaşım,Resmî / kurumsal,true
+SYN-0214,"Bilet ücretinin yanında bagaj, koltuk seçimi ve hizmet bedellerini tek bir toplam altında daha açık gösterebilirsiniz.",Öneri,Ulaşım,Ayrıntılı anlatım,true
+SYN-0237,Randevu saatim yaklaşırken hastanede hangi danışma noktasına başvurmam gerektiği belirtiliyor mu?,Soru,Sağlık hizmetleri,Günlük konuşma,true
+SYN-0260,Randevu iptal edildiğinde boşalan saati bekleme listesindeki kişilere otomatik teklif eden bir sistem kurulabilir.,Öneri,Sağlık hizmetleri,Yazım varyasyonlu,true
+SYN-0283,sokak lambasi arizasini bildirmek icin fotograf eklemek zorunlu mu?,Soru,Belediye hizmetleri,Kısa ve doğrudan,true
+SYN-0306,"Belediye duyurularının yalnızca sosyal medyada değil, isteğe bağlı SMS ve e-posta özetiyle de iletilmesini tavsiye ederim.",Öneri,Belediye hizmetleri,Resmî / kurumsal,true
+SYN-0329,erasmus basvurusu icin dil sinavina hangi tarihte girmek gerekiyor?,Soru,Eğitim,Ayrıntılı anlatım,true
+SYN-0352,Kampüse daha çok bisiklet parkı koyun.,Öneri,Eğitim,Günlük konuşma,true
+SYN-0375,dagitim merkezinde bekleyen paket icin subeye gitmeden teslim talebi acilabiliyor mu?,Soru,Kargo ve lojistik,Yazım varyasyonlu,true
+SYN-0398,Paket ölçülerini fiyat hesaplamadan önce açıklayın.,Öneri,Kargo ve lojistik,Kısa ve doğrudan,true
+SYN-0421,"Yemeğim sipariş notunda özellikle belirttiğim alerjenle hazırlanmış, uyarıma rağmen paket de yanlış etiketlenmiş.",Şikâyet,Restoran ve konaklama,Resmî / kurumsal,true
+SYN-0444,Su sürahisini ücretsiz sunun.,Öneri,Restoran ve konaklama,Ayrıntılı anlatım,true
+SYN-0017,Satın aldığım masa çiziklerle dolu çıktı ve kutudaki montaj parçalarının yarısı eksikti.,Şikâyet,E-ticaret,Günlük konuşma,true
+SYN-0040,Sürekli aynı ürünleri alan müşteriler için tek tuşla yeniden sipariş seçeneği düşünülse harika olur.,Öneri,E-ticaret,Yazım varyasyonlu,true
+SYN-0063,"Kredi kartı ekstreme açıklamasız bir sigorta bedeli eklenmiş, iptal başvurumu da sonuçlandırmıyorsunuz.",Şikâyet,Bankacılık ve finans,Kısa ve doğrudan,true
+SYN-0086,Müşterinin kendi belirlediği tutarın üzerindeki harcamalarda ek onay isteme ayarı eklenirse güvenlik artar.,Öneri,Bankacılık ve finans,Resmî / kurumsal,true
+SYN-0109,Mahalledeki baz istasyonu arızası nedeniyle telefon görüşmeleri sürekli yarıda kalıyor.,Şikâyet,Telekomünikasyon,Ayrıntılı anlatım,true
+SYN-0132,"Taşınma başvurusu, modem iadesi ve yeni kurulumun tek işlem akışında yönetilmesini tavsiye ederim.",Öneri,Telekomünikasyon,Günlük konuşma,true
+SYN-0155,Giriş kodu doğru olmasına rağmen sistem hesabımı kilitledi; destek formu da hata veriyor.,Şikâyet,Yazılım ve mobil uygulamalar,Yazım varyasyonlu,true
+SYN-0178,uygulamaya deneme verileriyle calisan bir tanitim modu koyarsaniz yeni uyeler daha cabuk alisir.,Öneri,Yazılım ve mobil uygulamalar,Kısa ve doğrudan,true
+SYN-0201,İstasyondaki asansör bozuk olduğu için ağır valizle merdiven çıkmak zorunda kaldım.,Şikâyet,Ulaşım,Resmî / kurumsal,true
+SYN-0224,duraklarda qr kodla hat ve tarife bilgisi acilan levhalar kullanilabilir.,Öneri,Ulaşım,Ayrıntılı anlatım,true
+SYN-0247,Telefonla randevu hattına ulaşamıyorum.,Şikâyet,Sağlık hizmetleri,Günlük konuşma,true
+SYN-0270,asilama hatirlatmalarini aile uyelerinin takvimine izinli sekilde ekleme ozelligi faydali olur.,Öneri,Sağlık hizmetleri,Yazım varyasyonlu,true
+SYN-0293,Mahalle çeşmesinden günlerdir su akmıyor.,Şikâyet,Belediye hizmetleri,Kısa ve doğrudan,true
+SYN-0316,Ders seçim döneminde kontenjanı dolan bir derse yedek liste üzerinden kayıt yaptırma olanağı var mı?,Soru,Eğitim,Resmî / kurumsal,true
+SYN-0339,Yurt odasında internet çekmiyor.,Şikâyet,Eğitim,Ayrıntılı anlatım,true
+SYN-0362,Alıcı evde olmadığında paketin komşuya bırakılması için önceden yazılı izin verebilir miyim?,Soru,Kargo ve lojistik,Günlük konuşma,true
+SYN-0385,Aynı gönderi için iki ayrı ücret kesilmiş; dekontu paylaşmama rağmen muhasebe birimi iade yapmıyor.,Şikâyet,Kargo ve lojistik,Yazım varyasyonlu,true
+SYN-0408,Paket servis siparişine alerji bilgisini mutfak ekibine doğrudan iletebileceğim bir alan bulunuyor mu?,Soru,Restoran ve konaklama,Kısa ve doğrudan,true
+SYN-0431,Çocuk yatağı talebim onaylandı fakat odaya yerleştirilmedi ve gece boyunca çözüm bulunamadı.,Şikâyet,Restoran ve konaklama,Resmî / kurumsal,true
+SYN-0004,"Aldığım kahve makinesinin filtreleri ayrıca mı satılıyor, ürün kutusunda yedek parça bulunuyor mu?",Soru,E-ticaret,Ayrıntılı anlatım,true
+SYN-0027,"Satıcıyla iletişim kurulamıyor, platform da hatalı ilanı kaldırmak için hiçbir adım atmıyor.",Şikâyet,E-ticaret,Günlük konuşma,true
+SYN-0050,Mobil şubede görünen kullanılabilir limit ile dönem içi harcama tutarı neden farklı hesaplanıyor?,Soru,Bankacılık ve finans,Yazım varyasyonlu,true
+SYN-0073,"hesabimdan onayim olmadan para cikmis, itiraz formunu da sistem hata vererek gondermiyor.",Şikâyet,Bankacılık ve finans,Kısa ve doğrudan,true
+SYN-0096,Faturadaki veri kullanımı dökümünde uygulama bazında ayrıntı görmek mümkün mü?,Soru,Telekomünikasyon,Resmî / kurumsal,true
+SYN-0119,"kullanim detayinda anlamadigim ek servisler acilmis, iptal istegime ragmen ucret kesiliyor.",Şikâyet,Telekomünikasyon,Ayrıntılı anlatım,true
+SYN-0142,Çevrimdışı mod hangi bölümlerde çalışıyor?,Soru,Yazılım ve mobil uygulamalar,Günlük konuşma,true
+SYN-0165,yedekleme basarili yazmasina ragmen eski notlarim geri yuklenmedi.,Şikâyet,Yazılım ve mobil uygulamalar,Yazım varyasyonlu,true
+SYN-0188,Biletimi başkasına devredebilir miyim?,Soru,Ulaşım,Kısa ve doğrudan,true
+SYN-0211,Sefer saatleri değiştiğinde yolcunun takvimine otomatik güncelleme gönderen bir seçenek eklenebilir.,Öneri,Ulaşım,Resmî / kurumsal,true
+SYN-0234,Aşı takvimimi nerede görüntülerim?,Soru,Sağlık hizmetleri,Ayrıntılı anlatım,true
+SYN-0257,Randevu öncesi gerekli hazırlıkların bölüm ve işlem türüne göre tek sayfada gösterilmesi hastaların yanlış hazırlık yapmasını önler.,Öneri,Sağlık hizmetleri,Günlük konuşma,true
+SYN-0280,Engelli rampası yapılması için mahalle sakinleri ortak başvuru oluşturabiliyor mu?,Soru,Belediye hizmetleri,Yazım varyasyonlu,true
+SYN-0303,Park bakım takviminin yapılan ve sıradaki işleri gösterecek biçimde aylık yayımlanması hesap verebilirliği artırır.,Öneri,Belediye hizmetleri,Kısa ve doğrudan,true
+SYN-0326,Akademik danışman değişikliği talebi dönem ortasında yapılabiliyor mu?,Soru,Eğitim,Resmî / kurumsal,true
+SYN-0349,Ders materyallerinin erişilebilir metin ve ses biçimlerinin birlikte sunulması farklı öğrenme ihtiyaçlarına destek olur.,Öneri,Eğitim,Ayrıntılı anlatım,true
+SYN-0372,Teslim alan kişinin imzasını dijital makbuzda görüntüleyebilir miyim?,Soru,Kargo ve lojistik,Günlük konuşma,true
+SYN-0395,Şubelerdeki tahmini sıra süresi uygulamada görünürse müşteriler yoğun olmayan saatleri seçebilir.,Öneri,Kargo ve lojistik,Yazım varyasyonlu,true
+SYN-0418,kahvalti saatleri hafta ici ve hafta sonu farkli mi?,Soru,Restoran ve konaklama,Kısa ve doğrudan,true
+SYN-0441,Konaklama yorumlarında seyahat tarihi ve oda tipi filtresi bulunması değerlendirmelerin daha anlamlı olmasını sağlar.,Öneri,Restoran ve konaklama,Resmî / kurumsal,true
+SYN-0014,magazadan teslim alacagim siparis icin kimlik gostermem yeterli mi?,Soru,E-ticaret,Ayrıntılı anlatım,true
+SYN-0037,Ürün listesini favorilere eklemek iyi olur.,Öneri,E-ticaret,Günlük konuşma,true
+SYN-0060,yatirim hesabinda alis emrinin gerceklesme saatini uygulamadan takip etmenin yolu nedir?,Soru,Bankacılık ve finans,Yazım varyasyonlu,true
+SYN-0083,Ekstrede harcamaları kategoriye göre gruplayın.,Öneri,Bankacılık ve finans,Kısa ve doğrudan,true
+SYN-0106,Bir haftadır bağlantı kopuyor; arıza kaydı kapatılıyor ama aynı kesinti her akşam yeniden başlıyor.,Şikâyet,Telekomünikasyon,Resmî / kurumsal,true
+SYN-0129,Hat sahibinin aile üyeleri için ayrı harcama sınırı tanımlayabilmesi iyi olur.,Öneri,Telekomünikasyon,Ayrıntılı anlatım,true
+SYN-0152,Kaydettiğim taslaklar hesabımdan kayboldu ve geri yükleme talebime otomatik yanıt dışında dönüş yok.,Şikâyet,Yazılım ve mobil uygulamalar,Günlük konuşma,true
+SYN-0175,İnternet bağlantısı yeniden geldiğinde bekleyen işlemleri kullanıcıdan onay alarak sırayla gönderen bir kuyruk özelliği çok yararlı olur.,Öneri,Yazılım ve mobil uygulamalar,Yazım varyasyonlu,true
+SYN-0198,"Tren vagonunda klima çalışmıyordu, görevliye bildirdiğimizde arızayı görmezden geldi.",Şikâyet,Ulaşım,Kısa ve doğrudan,true
+SYN-0221,Yolcuların seyahat öncesinde sessiz alan veya çocuklu aile bölümü seçebilmesi konforu artırabilir.,Öneri,Ulaşım,Resmî / kurumsal,true
+SYN-0244,"Randevu onay mesajı gelmediği için muayeneye alınmadım, sistemdeki kayıt hatasının bedelini ben ödedim.",Şikâyet,Sağlık hizmetleri,Ayrıntılı anlatım,true
+SYN-0267,Hastane içinde laboratuvar ve görüntüleme birimlerine erişimi gösteren erişilebilir bir yön bulma haritası geliştirilebilir.,Öneri,Sağlık hizmetleri,Günlük konuşma,true
+SYN-0290,Otobüs durağındaki elektronik pano uzun süredir yanlış saat gösteriyor ve bekleyenleri yanıltıyor.,Şikâyet,Belediye hizmetleri,Yazım varyasyonlu,true
+SYN-0313,yol calismalarinda kapanan sokak icin alternatif guzergahi qr kodla duyurun.,Öneri,Belediye hizmetleri,Kısa ve doğrudan,true
+SYN-0336,"Burs ödemem açıklama yapılmadan durduruldu, öğrenci işleri de ilgili birime yönlendirmekle yetiniyor.",Şikâyet,Eğitim,Resmî / kurumsal,true
+SYN-0359,kampus icindeki su sebillerinin yerini gosteren bir harita eklenmesini oneriyorum.,Öneri,Eğitim,Ayrıntılı anlatım,true
+SYN-0382,Takip bilgisi iki gündür yenilenmiyor.,Şikâyet,Kargo ve lojistik,Günlük konuşma,true
+SYN-0405,kurye teslimatinda alicinin tek kullanimlik kodla teslimi onaylamasi guvenligi artirabilir.,Öneri,Kargo ve lojistik,Yazım varyasyonlu,true
+SYN-0428,Masamız rezervasyon saatinde hazır değildi.,Şikâyet,Restoran ve konaklama,Kısa ve doğrudan,true

@@ -1,0 +1,61 @@
+{
+  "dataset_name": "TurkishTextClassifier Independent Synthetic Evaluation Dataset",
+  "version": "1.0.0",
+  "creation_date": "2026-11-01",
+  "total_examples": 450,
+  "class_distribution": {
+    "Soru": 150,
+    "Şikâyet": 150,
+    "Öneri": 150
+  },
+  "domain_distribution": {
+    "E-ticaret": 45,
+    "Bankacılık ve finans": 45,
+    "Telekomünikasyon": 45,
+    "Yazılım ve mobil uygulamalar": 45,
+    "Ulaşım": 45,
+    "Sağlık hizmetleri": 45,
+    "Belediye hizmetleri": 45,
+    "Eğitim": 45,
+    "Kargo ve lojistik": 45,
+    "Restoran ve konaklama": 45
+  },
+  "writing_style_distribution": {
+    "Resmî / kurumsal": 90,
+    "Ayrıntılı anlatım": 90,
+    "Günlük konuşma": 90,
+    "Yazım varyasyonlu": 90,
+    "Kısa ve doğrudan": 90
+  },
+  "synthetic_data_status": "All 450 examples are synthetically authored for independent evaluation. No external dataset or model-generated prediction was used.",
+  "encoding": "UTF-8",
+  "label_values": [
+    "Soru",
+    "Şikâyet",
+    "Öneri"
+  ],
+  "columns": {
+    "id": "Unique synthetic record ID (SYN-0001 through SYN-0450).",
+    "text": "Synthetic Turkish user-style sentence.",
+    "gold_label": "Gold intent label; exact label spelling used by the original project.",
+    "domain": "One of the ten represented service domains.",
+    "writing_style": "Editorial style descriptor; five balanced writing-style groups.",
+    "synthetic": "String boolean; all rows are true."
+  },
+  "validation_status": "PASSED",
+  "validation_summary": {
+    "row_count": 450,
+    "class_balance": "150 per class",
+    "domain_balance": "45 per domain",
+    "writing_style_balance": "90 per style",
+    "within_dataset_exact_duplicates": 0,
+    "original_exact_overlaps": 0,
+    "original_punctuation_insensitive_overlaps": 0,
+    "empty_text_fields": 0,
+    "utf8_decode": "passed",
+    "personal_identifier_pattern_matches": 0,
+    "model_inference_or_training_performed": false
+  },
+  "label_audit_status": "aggregate 450/450 agreement was previously reported, but per-example review decisions were not preserved; independent agreement is not verifiable from packaged evidence",
+  "label_audit_limitations": "The temporary builder script assigns gold labels during its adjudication step, so its output cannot be used as independent audit evidence. No dataset labels were changed during consolidation."
+}

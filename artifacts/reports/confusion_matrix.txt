@@ -1,0 +1,6 @@
+Classes: ['Soru', 'Şikâyet', 'Öneri']
+
+           Pred: Soru       Pred: Şikâyet    Pred: Öneri     
+True: Soru   151             0               0              
+True: Şikâyet 0               127             0              
+True: Öneri  0               1               106            
