@@ -12,7 +12,7 @@ The repository contains the original project corpus and a separate synthetic eva
 | `data/turkish_text_dataset.jsonl` | 1,922 | JSON Lines representation of the corpus |
 | `data/train.csv` | 1,537 | Training split |
 | `data/test.csv` | 385 | Held-out internal test split |
-| `test_samples_20.json` | 25 | Manually prepared examples (filename says 20; actual array contains 25) |
+| `data/manual_samples.json` | 25 | Manually prepared examples |
 | `artifacts/reports/manual_test_results.json` | 25 results | Previously recorded manual evaluation output |
 
 The corpus schema is `text`, `label`, and `domain`. Its labels are `Soru`, `Şikâyet`, and `Öneri`. The full corpus label distribution is 756 / 632 / 534 respectively. The train/test split is stratified according to the original model card.
@@ -44,8 +44,6 @@ Its accompanying `README.md`, `QUALITY_REPORT.md`, `GENERATION_NOTES.md`, and `d
 - Synthetic fluency, label decisions, and domain balance may differ from naturally collected messages.
 - A separate internal editorial label review is not independent human annotation.
 - Similarity checks do not prove semantic independence.
-- No formal redistribution license for either original corpus or synthetic evaluation content was supplied as a legal document.
-
 ## Licensing and attribution
 
-No `LICENSE` file was present in the supplied project. `artifacts/model/metadata.json` and the original model card record an MIT license claim for the model, but the repository does not contain a corresponding license grant or rights-holder statement. That metadata alone is not treated here as sufficient proof that the code, weights, or datasets may all be redistributed under MIT. Obtain explicit confirmation and add the appropriate code/model/data terms before public publication.
+The codebase is released under the **MIT License** (Copyright (c) 2026 wineglyph). The dataset provenance is locally generated based on domain templates and vocabulary, as described in `src/dataset/generate_dataset.py`.

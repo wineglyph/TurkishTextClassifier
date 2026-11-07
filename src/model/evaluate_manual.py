@@ -15,7 +15,7 @@ def run_manual_evaluation():
     print("=" * 65)
     
     # 1. Load manual test samples
-    samples_path = Path("data/manual_samples.json") if Path("data/manual_samples.json").is_file() else Path("test_samples_20.json")
+    samples_path = Path("data/manual_samples.json")
     with samples_path.open("r", encoding="utf-8") as f:
         samples = json.load(f)
         

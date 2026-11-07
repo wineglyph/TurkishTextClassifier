@@ -45,7 +45,7 @@ def read_original_texts(root: Path) -> list[str]:
                 obj = json.loads(line)
                 if isinstance(obj, dict) and isinstance(obj.get("text"), str):
                     texts.append(obj["text"])
-    for rel in ("test_samples_20.json", "artifacts/reports/manual_test_results.json"):
+    for rel in ("data/manual_samples.json", "test_samples_20.json", "artifacts/reports/manual_test_results.json"):
         p = root / rel
         if p.exists():
             obj = json.loads(p.read_text(encoding="utf-8"))

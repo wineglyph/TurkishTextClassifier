@@ -25,7 +25,7 @@ EXPECTED = {
     "data/turkish_text_dataset.jsonl",
     "data/train.csv",
     "data/test.csv",
-    "test_samples_20.json",
+    "data/manual_samples.json",
     "external_eval/synthetic_test.csv",
     "external_eval/results/predictions.csv",
     "external_eval/results/evaluation_metrics.json",

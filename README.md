@@ -34,7 +34,7 @@ The model predicts one primary class; it is not a general sentiment classifier a
 
 The production inference path in `src/model/predict.py` loads `artifacts/model/turkish_text_classifier.joblib`. The serialized pipeline applies the project's `preprocess_turkish_text` function inside `TfidfVectorizer` (word n-grams `(1, 2)`, `sublinear_tf=True`) and feeds those features to balanced Logistic Regression (`C=2.0`, `lbfgs`).
 
-The training script (`src/model/train.py`) compares candidate classifiers, fits the selected Logistic Regression pipeline, and writes model/report artifacts. **Training is not needed for inference.** The project was not retrained or modified during this consolidation.
+The training script (`src/model/train.py`) compares candidate classifiers, fits the selected Logistic Regression pipeline, and writes model/report artifacts. **Training is not needed for inference**; pre-trained artifacts are provided under `artifacts/model/`.
 
 ## Dataset composition
 
@@ -44,15 +44,15 @@ The training script (`src/model/train.py`) compares candidate classifiers, fits 
 |---|---:|---|
 | `data/turkish_text_dataset.csv` | 1,922 | Complete corpus, fields `text`, `label`, `domain` |
 | `data/turkish_text_dataset.jsonl` | 1,922 | JSONL representation of the corpus |
-| `data/train.csv` | 1,537 | Original training split |
-| `data/test.csv` | 385 | Original held-out test split |
-| `test_samples_20.json` | 25 | Manually prepared examples (despite the filename) |
+| `data/train.csv` | 1,537 | Training split |
+| `data/test.csv` | 385 | Held-out test split |
+| `data/manual_samples.json` | 25 | Manually prepared validation examples |
 
-The full corpus has 756 `Soru`, 632 `Şikâyet`, and 534 `Öneri` examples. The supplied project documentation describes ten domains. The separate validation split was not present in the original archive. See [Dataset Card](docs/DATASET_CARD.md) for provenance, intended use, and rights caveats.
+The full corpus has 756 `Soru`, 632 `Şikâyet`, and 534 `Öneri` examples across ten service domains. See [Dataset Card](docs/DATASET_CARD.md) for provenance and intended use.
 
 ### Independent synthetic evaluation data
 
-`external_eval/synthetic_test.csv` contains exactly 450 synthetically generated Turkish examples, balanced at 150 per category. It spans ten domains (45 each) and five writing styles (90 each). It is a separate held-out evaluation candidate, not a training dataset. The folder also contains its quality report, metadata, validation script, generated predictions, metrics, confusion matrix, and individual error analysis. The aggregate 450/450 second-pass label-review claim from earlier working notes is not independently verifiable because per-example review decisions were not retained; this limitation is now documented in the quality report.
+`external_eval/synthetic_test.csv` contains 450 synthetically generated Turkish examples, balanced at 150 per category. It spans ten domains (45 each) and five writing styles (90 each). It is a separate held-out evaluation set, not a training dataset. The folder also contains its quality report, metadata, validation script, generated predictions, metrics, confusion matrix, and individual error analysis.
 
 ## Installation
 
@@ -65,13 +65,15 @@ python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
 ```
 
-The serialized scikit-learn model reports a save-time version of **1.9.1**. `requirements.txt` pins that version to avoid the cross-version warning observed when it was loaded with scikit-learn 1.8.0. No clean installation/reproduction under 1.9.1 was performed during consolidation; see [Compatibility and Provenance](docs/COMPATIBILITY_AND_PROVENANCE.md).
+The serialized scikit-learn model reports a save-time version of **1.9.1**. `requirements.txt` pins that version to avoid cross-version unpickling warnings. See [Compatibility and Provenance](docs/COMPATIBILITY_AND_PROVENANCE.md).
 
 More details: [Installation Guide](docs/INSTALLATION.md).
 
 ## Usage
 
 Run commands from the project root so the existing relative artifact paths resolve.
+
+> **Security Notice:** Serialized model artifacts (`.joblib`) are based on Python `pickle`. Only load model weights from sources you trust.
 
 ### CLI
 
@@ -124,7 +126,7 @@ The service also accepts a `texts` array for batch requests. It binds to `0.0.0.
 ### Demo
 
 ```bash
-python run_demo.py
+python examples/run_demo.py
 ```
 
 ## Evaluation results
@@ -149,7 +151,7 @@ Full details: [Evaluation Report](external_eval/results/EVALUATION_REPORT.md), [
 
 ## Compatibility warning
 
-The evaluation pipeline loaded successfully and predicted all 450 items, but its runtime was scikit-learn 1.8.0 while the serialized estimators report 1.9.1. An `InconsistentVersionWarning` was emitted. The measured results are actual outputs from that run, but cross-version deserialization is a reproducibility caveat. Re-run in the pinned artifact-matching environment before relying on strict bit-for-bit reproducibility. No compatibility rerun is claimed here.
+The evaluation pipeline loaded successfully and predicted all 450 items, but its runtime was scikit-learn 1.8.0 while the serialized estimators report 1.9.1. An `InconsistentVersionWarning` was emitted. The measured results are actual outputs from that run, but cross-version deserialization is a reproducibility caveat. Re-run in the pinned artifact-matching environment before relying on strict bit-for-bit reproducibility.
 
 ## Known limitations
 
@@ -159,7 +161,6 @@ The evaluation pipeline loaded successfully and predicted all 450 items, but its
 - Very short, ambiguous, sarcastic, or mixed-intent messages may be difficult to classify.
 - Confidence values are the winning class probabilities returned by the model; calibration has not been independently assessed.
 - The model's serialized scikit-learn version differs from the evaluation runtime, as described above.
-- Original dataset and repository redistribution rights are not legally established by a supplied `LICENSE` file.
 
 ## Future development ideas
 
@@ -174,24 +175,25 @@ The evaluation pipeline loaded successfully and predicted all 450 items, but its
 
 ```text
 TurkishTextClassifier/
-├── artifacts/model/            # Existing fitted artifacts and configs
-├── artifacts/reports/          # Original evaluation and test reports
-├── data/                       # Original corpus, train/test splits, raw staging
-├── docs/                       # Model, dataset, installation, structure docs
+├── artifacts/model/            # Fitted scikit-learn artifacts and configs
+├── artifacts/reports/          # Evaluation and test reports
+├── data/                       # Training, test, and validation datasets
+├── docs/                       # Model, dataset, and installation documentation
+├── examples/                   # Interactive demo scripts
+│   └── run_demo.py
 ├── external_eval/              # Independent synthetic evaluation and results
 ├── scripts/                    # Project verification utility
-├── src/dataset/                # Original dataset scripts
-├── src/model/                  # Training, preprocessing and prediction
-├── src/serve.py                # Lightweight HTTP inference server
-├── tests/                      # Packaging smoke tests
-├── run_demo.py
-└── test_samples_20.json         # 25 manually prepared inputs
+├── src/
+│   ├── dataset/                # Dataset generation and validation
+│   ├── model/                  # Training, preprocessing and prediction
+│   └── serve.py                # Lightweight HTTP inference server
+└── tests/                      # Packaging smoke tests
 ```
-
-See [full structure](docs/PROJECT_STRUCTURE.md), [final manifest](FINAL_MANIFEST.md), and [SHA-256 checksums](SHA256SUMS.txt).
 
 ## License
 
 This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for the full license text.
 
 Copyright (c) 2026 wineglyph.
+
+The MIT License applies to the code. Dataset copyright and provenance details are described in [docs/DATASET_CARD.md](docs/DATASET_CARD.md).

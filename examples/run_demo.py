@@ -5,10 +5,11 @@ Demonstrates model loading and classification of diverse sentences.
 
 import os
 import sys
-import time
+from pathlib import Path
 
-# Ensure src/model is accessible
-sys.path.append(os.path.abspath("src/model"))
+# Ensure src/model is accessible relative to repository root
+ROOT_DIR = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT_DIR / "src" / "model"))
 from predict import TurkishTextClassifierService
 
 def main():
@@ -17,7 +18,7 @@ def main():
     print("=" * 70)
     
     print("\n[1/2] Model Başlatılıyor...")
-    service = TurkishTextClassifierService(model_dir="artifacts/model")
+    service = TurkishTextClassifierService(model_dir=str(ROOT_DIR / "artifacts" / "model"))
     print("      ✓ Scikit-learn model hattı ve kelime haznesi yüklendi.")
     
     test_cases = [
