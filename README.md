@@ -121,7 +121,7 @@ curl -X POST http://127.0.0.1:8080/inference/predict \
   -d '{"text":"Kargom üç gündür dağıtıma çıkmadı."}'
 ```
 
-The service also accepts a `texts` array for batch requests. It binds to `0.0.0.0` and has no authentication; keep it on a trusted network or add an appropriate security layer before exposing it.
+The service also accepts a `texts` array for batch requests. It binds to `127.0.0.1` by default and has no authentication. For external network access, specify `--host 0.0.0.0`. Keep it on a trusted network or place an appropriate authentication layer/proxy in front of it before exposing it publicly.
 
 ### Demo
 

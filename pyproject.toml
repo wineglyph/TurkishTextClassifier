@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "turkish-text-classifier"
+version = "1.0.0"
+description = "A lightweight Turkish NLP text classification model that identifies questions, complaints, and suggestions using TF-IDF and machine learning."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [
+    { name = "wineglyph" }
+]
+keywords = [
+    "turkish-nlp",
+    "natural-language-processing",
+    "text-classification",
+    "machine-learning",
+    "scikit-learn",
+    "turkish-language"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Text Processing :: Linguistic"
+]
+dependencies = [
+    "scikit-learn==1.9.1",
+    "numpy>=2.0,<3.0",
+    "pandas>=2.2,<3.0",
+    "joblib>=1.4,<2.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

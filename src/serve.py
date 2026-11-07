@@ -115,19 +115,39 @@ class InferenceHandler(BaseHTTPRequestHandler):
                 "error": {"code": "ERR_404", "message": f"Endpoint '{self.path}' not found"}
             })
 
-def start_server(port: int = 8080):
+DEFAULT_HOST = "127.0.0.1"
+DEFAULT_PORT = 8080
+
+def start_server(host: str = DEFAULT_HOST, port: int = DEFAULT_PORT):
+    # Support callers who pass start_server(port) where host is an int
+    if isinstance(host, int):
+        port = host
+        host = DEFAULT_HOST
+
     global service
     print("Loading TurkishTextClassifier model...")
     service = TurkishTextClassifierService()
-    print(f"Model loaded successfully! Initializing Inference Microservice on port {port}...")
-    server = HTTPServer(("0.0.0.0", port), InferenceHandler)
-    print(f"[ONLINE] Inference Server running at http://0.0.0.0:{port}")
+    print(f"Model loaded successfully! Initializing Inference Microservice on {host}:{port}...")
+    server = HTTPServer((host, port), InferenceHandler)
+    print(f"[ONLINE] Inference Server running at http://{host}:{port}")
     try:
         server.serve_forever()
     except KeyboardInterrupt:
         print("\nStopping server...")
         server.server_close()
 
+def parse_args(argv=None):
+    import argparse
+    parser = argparse.ArgumentParser(description="TurkishTextClassifier HTTP Inference Server")
+    parser.add_argument("positional_port", nargs="?", type=int, default=None, help="Port to listen on (positional compatibility)")
+    parser.add_argument("--host", default=DEFAULT_HOST, help=f"Host address to bind to (default: {DEFAULT_HOST})")
+    parser.add_argument("--port", type=int, default=None, help=f"Port number to listen on (default: {DEFAULT_PORT})")
+    args = parser.parse_args(argv)
+
+    port = args.port or args.positional_port or DEFAULT_PORT
+    host = args.host
+    return host, port
+
 if __name__ == "__main__":
-    port = int(sys.argv[1]) if len(sys.argv) > 1 else 8080
-    start_server(port)
+    host, port = parse_args()
+    start_server(host=host, port=port)
