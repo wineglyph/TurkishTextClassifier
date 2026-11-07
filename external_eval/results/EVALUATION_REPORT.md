@@ -6,13 +6,11 @@
 
 ## 1. Model and inference method
 
-The inspected project exposes `TurkishTextClassifierService` in `src/model/predict.py`. Its default backend is `sklearn`. `src/evren/serve.py` also defaults requests to `backend="sklearn"`. The evaluated production path was:
+The inspected project exposes `TurkishTextClassifierService` in `src/model/predict.py`. Its backend is `sklearn`. `src/serve.py` uses this service path. The evaluated production path was:
 
-`TurkishTextClassifierService.predict_batch(texts, backend="sklearn")`
+`TurkishTextClassifierService.predict_batch(texts)`
 
 Primary loaded model artifact: `artifacts/model/turkish_text_classifier.joblib`. It contains the fitted scikit-learn pipeline: Turkish preprocessing within `TfidfVectorizer` (word unigrams and bigrams, sublinear TF scaling) followed by balanced Logistic Regression (`C=2.0`, `lbfgs`). The existing `predict()` method obtains `predict_proba`, selects `argmax`, and returns the winning class and confidence.
-
-The service constructor also loads `artifacts/model/turkish_text_classifier.pt` to initialize the optional PyTorch backend, but the default sklearn path does not run PyTorch inference. No alternate backend was used.
 
 ### Input isolation
 

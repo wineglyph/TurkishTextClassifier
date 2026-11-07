@@ -3,14 +3,11 @@ Pipeline definitions for TurkishTextClassifier:
 1. Turkish text preprocessing and tokenization
 2. Feature extraction (TF-IDF with sublinear scaling & n-grams)
 3. Model training & inference pipeline
-4. Lightweight PyTorch Neural Network mapping for EVREN .pt export
 """
 
 import re
 import unicodedata
 import numpy as np
-import torch
-import torch.nn as nn
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 from sklearn.pipeline import Pipeline
@@ -64,21 +61,3 @@ def build_sklearn_pipeline(c_param: float = 2.0, max_features: int = 5000):
         ("clf", classifier)
     ])
     return pipe
-
-class LightweightTurkishClassifierNN(nn.Module):
-    """
-    Lightweight Neural Network classifier operating over sparse/dense TF-IDF features.
-    Ideal for packaging into PyTorch weights (.pt) for EVREN AI platform.
-    """
-    def __init__(self, input_dim: int = 5000, num_classes: int = 3):
-        super().__init__()
-        self.fc = nn.Linear(input_dim, num_classes)
-        self.softmax = nn.Softmax(dim=1)
-        
-    def forward(self, x):
-        logits = self.fc(x)
-        return logits
-        
-    def predict_proba(self, x):
-        logits = self.fc(x)
-        return self.softmax(logits)

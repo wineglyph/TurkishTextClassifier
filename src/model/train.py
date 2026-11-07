@@ -2,7 +2,7 @@
 Training and Evaluation Script for TurkishTextClassifier:
 1. Cross-validates baseline lightweight models
 2. Trains the chosen architecture
-3. Exports both Scikit-Learn and PyTorch (.pt) weights
+3. Exports Scikit-Learn pipeline artifacts
 4. Evaluates on test set and generates detailed metrics
 """
 
@@ -12,7 +12,6 @@ import time
 import joblib
 import numpy as np
 import pandas as pd
-import torch
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import (
     accuracy_score,
@@ -27,7 +26,6 @@ from sklearn.naive_bayes import ComplementNB
 from sklearn.svm import LinearSVC
 
 from pipeline import (
-    LightweightTurkishClassifierNN,
     build_sklearn_pipeline,
     preprocess_turkish_text
 )
@@ -121,48 +119,18 @@ def run_training():
     for idx, true_cls in enumerate(CLASSES):
         print(f"True: {true_cls:<6} {cm[idx][0]:<15} {cm[idx][1]:<15} {cm[idx][2]:<15}")
         
-    # 6. Build PyTorch Model & Export Weights (.pt)
-    print("\n--- 4. PyTorch Model Weight Export for EVREN Platform ---")
-    vectorizer = chosen_pipeline.named_steps["tfidf"]
-    clf = chosen_pipeline.named_steps["clf"]
-    
-    feature_count = len(vectorizer.vocabulary_)
-    pytorch_model = LightweightTurkishClassifierNN(input_dim=feature_count, num_classes=len(CLASSES))
-    
-    # Canonical classes from classifier
-    classes = list(clf.classes_)
-    weights = clf.coef_.astype(np.float32)
-    biases = clf.intercept_.astype(np.float32)
-    
-    with torch.no_grad():
-        pytorch_model.fc.weight.copy_(torch.tensor(weights))
-        pytorch_model.fc.bias.copy_(torch.tensor(biases))
-        
-    pytorch_model.eval()
-    
-    # Verify PyTorch parity with Scikit-learn
-    sample_text = ["Kargom hala gelmedi, çok mağdur edildim.", "Bu ürünün başka rengi var mı?", "Gece modu eklense çok iyi olur."]
-    sample_feat = vectorizer.transform(sample_text).toarray()
-    with torch.no_grad():
-        torch_out = pytorch_model.predict_proba(torch.tensor(sample_feat, dtype=torch.float32)).detach().numpy()
-    sk_out = chosen_pipeline.predict_proba(sample_text)
-    parity_diff = np.max(np.abs(torch_out - sk_out))
-    print(f"Classes: {classes}")
-    print(f"Max absolute discrepancy between Scikit-learn and PyTorch: {parity_diff:.8f}")
-    assert parity_diff < 1e-4, f"PyTorch model weights discrepancy too high ({parity_diff})!"
-    print("[VERIFIED] Exact numerical parity between Scikit-Learn pipeline and PyTorch model.")
-    
-    # 7. Save all artifacts
+    # 6. Save all artifacts
     os.makedirs("artifacts/model", exist_ok=True)
     os.makedirs("artifacts/reports", exist_ok=True)
+    
+    vectorizer = chosen_pipeline.named_steps["tfidf"]
+    clf = chosen_pipeline.named_steps["clf"]
+    feature_count = len(vectorizer.vocabulary_)
+    classes = list(clf.classes_)
     
     # Save scikit-learn pipeline & vectorizer
     joblib.dump(chosen_pipeline, "artifacts/model/turkish_text_classifier.joblib")
     joblib.dump(vectorizer, "artifacts/model/vectorizer.joblib")
-    
-    # Save PyTorch model (.pt)
-    torch.save(pytorch_model.state_dict(), "artifacts/model/turkish_text_classifier.pt")
-    torch.save(pytorch_model, "artifacts/model/turkish_text_classifier_full.pt")
     
     # Save vocabulary
     vocab = {k: int(v) for k, v in vectorizer.vocabulary_.items()}
@@ -176,8 +144,8 @@ def run_training():
         "version": "1.0.0",
         "modality": "NLP",
         "task": "text_classification",
-        "framework": "pytorch",
-        "supported_formats": ["pt", "joblib"],
+        "framework": "scikit-learn",
+        "supported_formats": ["joblib"],
         "num_classes": 3,
         "classes": classes,
         "input_dim": feature_count,
@@ -190,15 +158,15 @@ def run_training():
     with open("artifacts/model/config.json", "w", encoding="utf-8") as f:
         json.dump(config, f, ensure_ascii=False, indent=2)
         
-    # Save EVREN-format metadata.json
-    evren_metadata = {
+    # Save metadata.json
+    model_metadata = {
         "name": "TurkishTextClassifier",
         "slug": "turkish-text-classifier",
         "architecture": "LinearTfidfClassifier",
         "modality": "NLP",
         "visibility": "PUBLIC",
         "stage": "PRODUCTION",
-        "framework": "pytorch",
+        "framework": "scikit-learn",
         "tags": ["turkish", "nlp", "text-classification", "intent", "sentiment", "customer-service"],
         "description": "Hafif ve yüksek performanslı Türkçe metin sınıflandırma modeli. Cümleleri Soru, Şikâyet ve Öneri olmak üzere 3 temel kategoriye ayırır.",
         "metrics": {
@@ -218,7 +186,7 @@ def run_training():
                 } for cls_name in classes
             }
         },
-        "file_size_bytes": os.path.getsize("artifacts/model/turkish_text_classifier.pt"),
+        "file_size_bytes": os.path.getsize("artifacts/model/turkish_text_classifier.joblib"),
         "license": "MIT",
         "demo_config": {
             "sample_inputs": [
@@ -229,7 +197,7 @@ def run_training():
         }
     }
     with open("artifacts/model/metadata.json", "w", encoding="utf-8") as f:
-        json.dump(evren_metadata, f, ensure_ascii=False, indent=2)
+        json.dump(model_metadata, f, ensure_ascii=False, indent=2)
         
     # Save evaluation report
     report = {

@@ -1,6 +1,6 @@
 """
-Interactive / Automated Demo for TurkishTextClassifier on EVREN AI ecosystem.
-Demonstrates model loading, classification of diverse sentences, and EVREN packaging verification.
+Interactive / Automated Demo for TurkishTextClassifier.
+Demonstrates model loading and classification of diverse sentences.
 """
 
 import os
@@ -13,12 +13,12 @@ from predict import TurkishTextClassifierService
 
 def main():
     print("=" * 70)
-    print("      TURKISH TEXT CLASSIFIER - EVREN AI END-TO-END DEMO")
+    print("      TURKISH TEXT CLASSIFIER - DEMO")
     print("=" * 70)
     
-    print("\n[1/3] Model Başlatılıyor...")
+    print("\n[1/2] Model Başlatılıyor...")
     service = TurkishTextClassifierService(model_dir="artifacts/model")
-    print("      ✓ Model ağırlıkları (PyTorch .pt & Scikit-learn) ve kelime haznesi yüklendi.")
+    print("      ✓ Scikit-learn model hattı ve kelime haznesi yüklendi.")
     
     test_cases = [
         # Soru örnekleri
@@ -37,14 +37,14 @@ def main():
         ("Restoran menülerine kalori ve alerjen bilgilerinin konulması harika olur.", "Öneri")
     ]
     
-    print("\n[2/3] Örnek Türkçe Cümleler Üzerinde Çıkarım (Inference):")
+    print("\n[2/2] Örnek Türkçe Cümleler Üzerinde Çıkarım (Inference):")
     print("-" * 70)
     print(f"{'Beklenen':<10} | {'Tahmin':<10} | {'Güven':<8} | {'Metin'}")
     print("-" * 70)
     
     all_match = True
     for text, expected in test_cases:
-        res = service.predict(text, backend="sklearn")
+        res = service.predict(text)
         pred = res["prediction"]
         conf = res["confidence"] * 100
         match = "✓" if pred == expected else "✗"
@@ -56,14 +56,6 @@ def main():
     if all_match:
         print("Tüm demo çıkarımları %100 başarıyla doğru sınıflandırıldı.")
         
-    print("\n[3/3] EVREN AI Paketleme ve Doğrulama Durumu:")
-    dist_tar = "artifacts/dist/turkish_text_classifier_v1.0.0.tar.gz"
-    dist_zip = "artifacts/dist/turkish_text_classifier_v1.0.0.zip"
-    if os.path.exists(dist_tar) and os.path.exists(dist_zip):
-        print(f"      ✓ EVREN Release Arşivi: {dist_tar} ({os.path.getsize(dist_tar)/1024:.1f} KB)")
-        print(f"      ✓ EVREN Zip Arşivi:     {dist_zip} ({os.path.getsize(dist_zip)/1024:.1f} KB)")
-        print(f"      ✓ PyTorch .pt:          artifacts/model/turkish_text_classifier.pt")
-        print(f"      ✓ Metadata & Config:    artifacts/model/metadata.json, config.json")
     print("\nDemo başarıyla tamamlandı!")
     print("=" * 70)
 

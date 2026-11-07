@@ -1,6 +1,6 @@
 """
-EVREN-Compatible Inference HTTP Microservice for TurkishTextClassifier.
-Provides standard EVREN AI inference endpoints using Python standard library http.server.
+Inference HTTP Microservice for TurkishTextClassifier.
+Provides inference endpoints using Python standard library http.server.
 Endpoints:
   GET  /health
   GET  /models/metadata
@@ -15,12 +15,12 @@ import time
 from http.server import HTTPServer, BaseHTTPRequestHandler
 
 # Add src/model to sys.path
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "model")))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "model")))
 from predict import TurkishTextClassifierService
 
 service = None
 
-class EvrenInferenceHandler(BaseHTTPRequestHandler):
+class InferenceHandler(BaseHTTPRequestHandler):
     def _send_json(self, status_code: int, data: dict):
         response_bytes = json.dumps(data, ensure_ascii=False).encode("utf-8")
         self.send_response(status_code)
@@ -45,8 +45,7 @@ class EvrenInferenceHandler(BaseHTTPRequestHandler):
                 "success": True,
                 "status": "healthy",
                 "model": "TurkishTextClassifier",
-                "version": "1.0.0",
-                "ecosystem": "EVREN AI"
+                "version": "1.0.0"
             })
         elif self.path in ["/models/metadata", "/metadata"]:
             meta_path = "artifacts/model/metadata.json"
@@ -89,11 +88,10 @@ class EvrenInferenceHandler(BaseHTTPRequestHandler):
                 })
                 return
 
-            backend = payload.get("backend", "sklearn")
             t0 = time.time()
             predictions = []
             for t in texts:
-                res = service.predict(t, backend=backend)
+                res = service.predict(t)
                 predictions.append({
                     "class_name": res["prediction"],
                     "confidence": res["confidence"],
@@ -108,7 +106,6 @@ class EvrenInferenceHandler(BaseHTTPRequestHandler):
                     "model": "TurkishTextClassifier",
                     "version": "1.0.0",
                     "predictions": predictions,
-                    "backend": backend,
                     "latency_ms": round(latency_ms, 3)
                 }
             })
@@ -120,11 +117,11 @@ class EvrenInferenceHandler(BaseHTTPRequestHandler):
 
 def start_server(port: int = 8080):
     global service
-    print(f"Loading TurkishTextClassifier model...")
+    print("Loading TurkishTextClassifier model...")
     service = TurkishTextClassifierService()
-    print(f"Model loaded successfully! Initializing EVREN Inference Microservice on port {port}...")
-    server = HTTPServer(("0.0.0.0", port), EvrenInferenceHandler)
-    print(f"[ONLINE] EVREN Inference Server running at http://0.0.0.0:{port}")
+    print(f"Model loaded successfully! Initializing Inference Microservice on port {port}...")
+    server = HTTPServer(("0.0.0.0", port), InferenceHandler)
+    print(f"[ONLINE] Inference Server running at http://0.0.0.0:{port}")
     try:
         server.serve_forever()
     except KeyboardInterrupt:

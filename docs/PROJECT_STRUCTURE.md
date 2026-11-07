@@ -10,8 +10,8 @@ TurkishTextClassifier/
 ├── SHA256SUMS.txt
 ├── FINAL_MANIFEST.md
 ├── artifacts/
-│   ├── model/                 # Original sklearn + PyTorch model artifacts
-│   └── reports/               # Original training/manual/EVREN reports
+│   ├── model/                 # Original sklearn model artifacts
+│   └── reports/               # Training and manual test reports
 ├── data/
 │   ├── raw/                   # Empty source-data staging directory
 │   ├── turkish_text_dataset.csv
@@ -20,7 +20,6 @@ TurkishTextClassifier/
 │   └── test.csv
 ├── docs/
 │   ├── DATASET_CARD.md
-│   ├── EVREN_INTEGRATION.md
 │   ├── INSTALLATION.md
 │   ├── MODEL_CARD.md
 │   └── PROJECT_STRUCTURE.md
@@ -41,8 +40,8 @@ TurkishTextClassifier/
 │   └── verify_project.py
 ├── src/
 │   ├── dataset/
-│   ├── evren/
-│   └── model/
+│   ├── model/
+│   └── serve.py
 ├── tests/
 │   └── test_project_smoke.py
 ├── run_demo.py
@@ -51,5 +50,5 @@ TurkishTextClassifier/
 
 The original `src/` and `artifacts/model/` locations are retained so legacy import and relative artifact paths continue to work. `models/`, `src/preprocessing/`, and `src/utils/` were not invented because the existing project does not use those locations. There is no separate validation split in the supplied source archive.
 
-The two pre-existing `artifacts/dist/` archives were excluded from the consolidated folder because they duplicate the model files already retained under `artifacts/model/`; `src/evren/package_model.py` remains available to rebuild EVREN distribution bundles when needed. Python `__pycache__` bytecode was excluded as local generated noise.
+The two pre-existing `artifacts/dist/` archives were excluded from the repository. Python `__pycache__` bytecode was excluded as local generated noise.
 ```

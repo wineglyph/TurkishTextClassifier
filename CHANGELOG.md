@@ -2,18 +2,17 @@
 
 All notable project packaging and evaluation changes are recorded here.
 
-## 1.0.0 — Original model release
+## 1.1.0 — Removed EVREN integration
+
+- Removed EVREN integration scripts, platform probes, and EVREN documentation.
+- Moved HTTP inference microservice to `src/serve.py`.
+- Removed PyTorch export layer and runtime dependency (`torch`), standardizing on scikit-learn.
+- Updated documentation and verification tools.
+
+## 1.0.0 — Initial release
 
 - Bundled TurkishTextClassifier source code, training and preprocessing pipeline.
-- Included original complete corpus, train/test splits, and manually prepared examples.
-- Included fitted scikit-learn pipeline, PyTorch exports, vocabulary, model config, and reports.
-- Included EVREN integration scripts and documentation.
-
-## 1.0.0-consolidated — 2026-11-01
-
-- Consolidated the supplied original project with the independent 450-example synthetic evaluation dataset.
-- Added predictions, metrics, confusion matrix, and complete misclassification analysis from the completed evaluation.
-- Added project installation, dataset, compatibility, and structure documentation.
-- Added a reusable integrity/smoke-check utility and tests.
-- Preserved all original model and dataset files byte-for-byte.
-- Did not retrain, fine-tune, or modify model artifacts.
+- Included complete corpus, train/test splits, and manually prepared examples.
+- Included fitted scikit-learn pipeline, vocabulary, model config, and evaluation reports.
+- Added independent 450-example synthetic evaluation benchmark with recorded predictions and error analysis.
+- Added reusable integrity/smoke-check utilities and tests.

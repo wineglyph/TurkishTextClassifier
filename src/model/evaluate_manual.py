@@ -1,35 +1,27 @@
 """
 Evaluator for manually selected Turkish test sentences.
-Tests both the Scikit-learn pipeline and PyTorch model on 25 real-world sentences.
+Tests the Scikit-learn pipeline on real-world sentences.
 """
 
 import json
+import os
+from pathlib import Path
 import joblib
 import numpy as np
-import torch
-from pipeline import LightweightTurkishClassifierNN, preprocess_turkish_text
 
 def run_manual_evaluation():
     print("=" * 65)
-    print("   MANUAL EVALUATION ON 25 REAL-WORLD TURKISH SENTENCES")
+    print("   MANUAL EVALUATION ON REAL-WORLD TURKISH SENTENCES")
     print("=" * 65)
     
     # 1. Load manual test samples
-    with open("test_samples_20.json", "r", encoding="utf-8") as f:
+    samples_path = Path("data/manual_samples.json") if Path("data/manual_samples.json").is_file() else Path("test_samples_20.json")
+    with samples_path.open("r", encoding="utf-8") as f:
         samples = json.load(f)
         
     # 2. Load model & vectorizer
     pipeline = joblib.load("artifacts/model/turkish_text_classifier.joblib")
     classes = list(pipeline.named_steps["clf"].classes_)
-    
-    # 3. Load PyTorch model
-    with open("artifacts/model/vocab.json", "r", encoding="utf-8") as f:
-        vocab = json.load(f)
-    vectorizer = pipeline.named_steps["tfidf"]
-    
-    pytorch_model = LightweightTurkishClassifierNN(input_dim=len(vocab), num_classes=len(classes))
-    pytorch_model.load_state_dict(torch.load("artifacts/model/turkish_text_classifier.pt"))
-    pytorch_model.eval()
     
     results = []
     correct_count = 0
@@ -47,15 +39,6 @@ def run_manual_evaluation():
         pred_idx = np.argmax(prob)
         predicted = classes[pred_idx]
         conf = float(prob[pred_idx])
-        
-        # PyTorch prediction
-        feat = vectorizer.transform([text]).toarray()
-        with torch.no_grad():
-            torch_prob = pytorch_model.predict_proba(torch.tensor(feat, dtype=torch.float32)).numpy()[0]
-        torch_pred = classes[np.argmax(torch_prob)]
-        
-        # Parity check
-        assert predicted == torch_pred, f"Prediction mismatch between sklearn and PyTorch on: '{text}'"
         
         is_correct = (predicted == expected)
         if is_correct:

@@ -4,12 +4,10 @@
 - **Model Name:** TurkishTextClassifier
 - **Version:** 1.0.0
 - **Model Type:** Lightweight Turkish Text Intent Classifier
-- **Architecture:** Sublinear TF-IDF (1-2 n-grams, 5000 max features) + Balanced Linear/Logistic Classifier (with PyTorch `.pt` neural projection)
-- **Frameworks:** The original card records PyTorch 2.15.0 and scikit-learn 1.9.1. The consolidation smoke-tested the PyTorch backend runtime with PyTorch 2.10.0+cpu; the sklearn artifact emitted a version warning under scikit-learn 1.8.0 (see Section 8).
-- **Target Ecosystem:** EVREN AI (`ssyz.org.tr`)
+- **Architecture:** Sublinear TF-IDF (1-2 n-grams, 5000 max features) + Balanced Linear/Logistic Classifier
+- **Frameworks:** scikit-learn 1.9.1
 - **Modality:** NLP (Text)
-- **License metadata:** `MIT` is recorded in `artifacts/model/metadata.json`; however, no repository `LICENSE` file or independent rights-holder authorization was supplied. Treat redistribution rights as unverified until confirmed.
-- **Author/Maintainer metadata:** EVREN AI NLP Project (as recorded in the original model card; ownership was not independently verified).
+- **License:** MIT License (Copyright (c) 2026 wineglyph)
 
 ---
 
@@ -61,9 +59,6 @@
   - Logistic Regression (C=2.0, balanced): **F1-Macro = 0.9958 (+/- 0.0050)**
   - LinearSVC (C=1.0, balanced): **F1-Macro = 0.9958 (+/- 0.0050)**
   - ComplementNB: **F1-Macro = 0.9958 (+/- 0.0050)**
-- **PyTorch Parity Transfer:**
-  - Linear layer weights and biases transferred directly to PyTorch `LightweightTurkishClassifierNN`.
-  - Maximum numerical probability divergence between Scikit-learn and PyTorch: **0.00000002** (exact parity).
 
 ---
 
@@ -103,7 +98,6 @@ True: Öneri        0           1            106
 ## 6. Limitations
 1. **Short Ambiguous Inputs:** Very short sentences consisting of 1-2 words without punctuation or context (e.g., *"Yardım"* or *"Destek"*) may exhibit lower prediction certainty.
 2. **Compound Sarcasm & Dual Intents:** Sentences containing both a complaint and a question (e.g., *"İki haftadır kargom gelmedi, bu nasıl rezillik?"*) will predominantly classify into the dominant lexical feature (Complaint in this instance).
-3. **EVREN Platform Modality Constraints:** EVREN AI's online portal (`https://evren.ssyz.org.tr`) currently supports dataset management and automated HPC training exclusively for VISION and MEDICAL modalities. Self-service text model training is not yet exposed via the public web UI. The model is packaged for PyTorch `.pt` local/microservice inference.
 
 ---
 
@@ -121,7 +115,7 @@ True: Öneri        0           1            106
 
 ## 8. Packaging and Evaluation Caveats
 
-- The production inference service defaults to the serialized scikit-learn pipeline (`artifacts/model/turkish_text_classifier.joblib`). It also initializes the optional PyTorch state-dictionary backend.
+- The production inference service loads the serialized scikit-learn pipeline (`artifacts/model/turkish_text_classifier.joblib`).
 - The independent synthetic evaluation used the default scikit-learn backend for 450 examples and measured 81.56% accuracy (367/450) and 81.07% macro F1. See `external_eval/results/EVALUATION_REPORT.md`. This synthetic benchmark is not a real-world production accuracy estimate.
 - During the recorded evaluation, the persisted scikit-learn estimators reported version 1.9.1, while the runtime was 1.8.0; an `InconsistentVersionWarning` was emitted. The pipeline loaded and predicted, but strict reproducibility should use the artifact-matching version.
 - The supplied repository contains no `LICENSE` file. The MIT value in model metadata does not independently establish redistribution rights for all bundled source, weights, and data.

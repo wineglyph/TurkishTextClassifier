@@ -11,8 +11,6 @@ class ProjectSmokeTests(unittest.TestCase):
     def test_required_model_artifacts_exist(self):
         for rel in (
             "artifacts/model/turkish_text_classifier.joblib",
-            "artifacts/model/turkish_text_classifier.pt",
-            "artifacts/model/turkish_text_classifier_full.pt",
             "artifacts/model/vectorizer.joblib",
             "artifacts/model/vocab.json",
             "artifacts/model/config.json",

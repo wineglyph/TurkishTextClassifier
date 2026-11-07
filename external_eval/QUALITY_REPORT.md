@@ -2,7 +2,7 @@
 
 ## 1. Scope and project inspection
 
-The supplied `evren metin proje.tar` archive was extracted into a separate inspection directory. The project files were inspected before data generation. The relevant inspected assets were:
+The supplied project archive was extracted into a separate inspection directory. The project files were inspected before data generation. The relevant inspected assets were:
 
 | Project area | Files inspected | Findings |
 |---|---|---|
@@ -10,8 +10,8 @@ The supplied `evren metin proje.tar` archive was extracted into a separate inspe
 | Training / test | `data/train.csv`, `data/test.csv` | 1,537 training rows; 385 test rows |
 | Manual tests | `test_samples_20.json`, `artifacts/reports/manual_test_results.json` | 25 manual examples in each representation; report mirrors the manual test texts |
 | Dataset generation / validation | `src/dataset/generate_dataset.py`, `src/dataset/validate_dataset.py` | Domain vocabulary, templates, 45 curated edge cases, and original QA logic inspected |
-| Preprocessing / model | `src/model/pipeline.py`, `src/model/predict.py`, `src/model/train.py`, `src/model/evaluate_manual.py` | Turkish normalizer, TF-IDF feature pipeline, Logistic Regression classifier, PyTorch projection, and prediction paths inspected |
-| Documentation | `README.md`, `docs/MODEL_CARD.md`, `docs/EVREN_INTEGRATION.md` | Intended use, categories, original data description, training/evaluation notes inspected |
+| Preprocessing / model | `src/model/pipeline.py`, `src/model/predict.py`, `src/model/train.py`, `src/model/evaluate_manual.py` | Turkish normalizer, TF-IDF feature pipeline, Logistic Regression classifier, and prediction paths inspected |
+| Documentation | `README.md`, `docs/MODEL_CARD.md` | Intended use, categories, original data description, training/evaluation notes inspected |
 | Existing artifacts | `artifacts/model/config.json`, `metadata.json`, `vocab.json`, weights, and `artifacts/reports/*` | Class names and model configuration inspected; no weights or model objects were loaded for prediction |
 | Release archives | `artifacts/dist/turkish_text_classifier_v1.0.0.tar.gz`, `.zip` | Contain model/package artifacts; no additional evaluation data corpus |
 

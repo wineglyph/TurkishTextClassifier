@@ -19,8 +19,6 @@ EXPECTED = {
     "artifacts/model/config.json",
     "artifacts/model/metadata.json",
     "artifacts/model/turkish_text_classifier.joblib",
-    "artifacts/model/turkish_text_classifier.pt",
-    "artifacts/model/turkish_text_classifier_full.pt",
     "artifacts/model/vectorizer.joblib",
     "artifacts/model/vocab.json",
     "data/turkish_text_dataset.csv",
@@ -117,15 +115,12 @@ def main() -> int:
     if all((ROOT / p).is_file() for p in (
         "artifacts/model/config.json",
         "artifacts/model/turkish_text_classifier.joblib",
-        "artifacts/model/turkish_text_classifier.pt",
         "artifacts/model/vocab.json",
     )):
         before = {p: sha256(ROOT / p) for p in (
             "artifacts/model/config.json",
             "artifacts/model/metadata.json",
             "artifacts/model/turkish_text_classifier.joblib",
-            "artifacts/model/turkish_text_classifier.pt",
-            "artifacts/model/turkish_text_classifier_full.pt",
             "artifacts/model/vectorizer.joblib",
             "artifacts/model/vocab.json",
         ) if (ROOT / p).is_file()}
@@ -135,7 +130,7 @@ def main() -> int:
                 warnings.simplefilter("always")
                 from predict import TurkishTextClassifierService
                 service = TurkishTextClassifierService(model_dir=str(ROOT / "artifacts" / "model"))
-                smoke = service.predict("Siparişim ne zaman kargoya verilir?", backend="sklearn")
+                smoke = service.predict("Siparişim ne zaman kargoya verilir?")
             print(f"[PASS] model load + text-only inference smoke: {smoke['prediction']} (confidence={smoke['confidence']})")
             for item in caught:
                 if "InconsistentVersionWarning" in type(item.message).__name__:

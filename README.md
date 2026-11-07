@@ -1,6 +1,6 @@
 # TurkishTextClassifier
 
-Lightweight Turkish-language intent classification for short user messages. The supplied trained model maps each input sentence to one of three classes: **Soru** (question), **Şikâyet** (complaint), or **Öneri** (suggestion). The repository includes the original training pipeline and datasets, the fitted scikit-learn and PyTorch artifacts, a local CLI/HTTP inference service, EVREN integration materials, and an independent synthetic evaluation benchmark with recorded predictions and error analysis.
+Lightweight Turkish-language intent classification for short user messages. The supplied trained model maps each input sentence to one of three classes: **Soru** (question), **Şikâyet** (complaint), or **Öneri** (suggestion). The repository includes the original training pipeline and datasets, the fitted scikit-learn pipeline, a local CLI/HTTP inference service, and an independent synthetic evaluation benchmark with recorded predictions and error analysis.
 
 > **License note:** This project is open-source and released under the [MIT License](LICENSE) (Copyright © 2026 wineglyph).
 
@@ -26,16 +26,15 @@ The model predicts one primary class; it is not a general sentiment classifier a
 - Turkish-aware lowercasing that preserves dotted/dotless `i` behavior.
 - Unicode NFKC normalization, punctuation cleanup, and whitespace normalization.
 - TF-IDF word unigrams/bigrams with sublinear term-frequency scaling.
-- Balanced Logistic Regression classifier in the default scikit-learn production pipeline.
-- Optional PyTorch linear projection export for the project’s EVREN-oriented packaging path.
+- Balanced Logistic Regression classifier in the scikit-learn production pipeline.
 - CLI, Python service class, and lightweight HTTP inference endpoints.
 - Original data/training reports plus a separate 450-row synthetic evaluation set.
 
 ## Architecture and methodology
 
-The default production inference path in `src/model/predict.py` loads `artifacts/model/turkish_text_classifier.joblib`. The serialized pipeline applies the project's `preprocess_turkish_text` function inside `TfidfVectorizer` (word n-grams `(1, 2)`, `sublinear_tf=True`) and feeds those features to balanced Logistic Regression (`C=2.0`, `lbfgs`). The `TurkishTextClassifierService` also initializes the optional PyTorch state-dictionary model from `turkish_text_classifier.pt`; callers can choose `backend="pytorch"`. The service defaults to `backend="sklearn"` and that was the backend used in the recorded independent evaluation.
+The production inference path in `src/model/predict.py` loads `artifacts/model/turkish_text_classifier.joblib`. The serialized pipeline applies the project's `preprocess_turkish_text` function inside `TfidfVectorizer` (word n-grams `(1, 2)`, `sublinear_tf=True`) and feeds those features to balanced Logistic Regression (`C=2.0`, `lbfgs`).
 
-The original training script (`src/model/train.py`) compares candidate classifiers, fits the selected Logistic Regression pipeline, exports its fitted parameters to the lightweight PyTorch layer, and writes model/report artifacts. **Training is not needed for inference.** The project was not retrained or modified during this consolidation.
+The training script (`src/model/train.py`) compares candidate classifiers, fits the selected Logistic Regression pipeline, and writes model/report artifacts. **Training is not needed for inference.** The project was not retrained or modified during this consolidation.
 
 ## Dataset composition
 
@@ -79,7 +78,6 @@ Run commands from the project root so the existing relative artifact paths resol
 ```bash
 python src/model/predict.py --text "Siparişim ne zaman kargoya verilir acaba?"
 python src/model/predict.py --text "Ürünün kutusu hasarlı geldi." --json
-python src/model/predict.py --text "Uygulamaya gece modu eklenmesini öneriyorum." --backend pytorch
 ```
 
 ### Python API
@@ -104,7 +102,7 @@ print(result["prediction"], result["confidence"])
 Start the built-in HTTP server:
 
 ```bash
-python src/evren/serve.py 8080
+python src/serve.py 8080
 ```
 
 Health check:
@@ -160,10 +158,8 @@ The evaluation pipeline loaded successfully and predicted all 450 items, but its
 - The model is a three-class intent classifier, not a general sentiment model or multi-intent system.
 - Very short, ambiguous, sarcastic, or mixed-intent messages may be difficult to classify.
 - Confidence values are the winning class probabilities returned by the model; calibration has not been independently assessed.
-- The optional PyTorch backend was not evaluated in the independent 450-example evaluation; the default scikit-learn backend was evaluated.
 - The model's serialized scikit-learn version differs from the evaluation runtime, as described above.
 - Original dataset and repository redistribution rights are not legally established by a supplied `LICENSE` file.
-- EVREN-related scripts and historical reports are included, but no EVREN publication or model registration is claimed.
 
 ## Future development ideas
 
@@ -179,24 +175,20 @@ The evaluation pipeline loaded successfully and predicted all 450 items, but its
 ```text
 TurkishTextClassifier/
 ├── artifacts/model/            # Existing fitted artifacts and configs
-├── artifacts/reports/          # Original evaluation and integration reports
+├── artifacts/reports/          # Original evaluation and test reports
 ├── data/                       # Original corpus, train/test splits, raw staging
-├── docs/                       # Model, dataset, installation, EVREN, structure docs
+├── docs/                       # Model, dataset, installation, structure docs
 ├── external_eval/              # Independent synthetic evaluation and results
 ├── scripts/                    # Project verification utility
 ├── src/dataset/                # Original dataset scripts
 ├── src/model/                  # Training, preprocessing and prediction
-├── src/evren/                  # EVREN packaging, probe, and HTTP server
+├── src/serve.py                # Lightweight HTTP inference server
 ├── tests/                      # Packaging smoke tests
 ├── run_demo.py
 └── test_samples_20.json         # 25 manually prepared inputs
 ```
 
 See [full structure](docs/PROJECT_STRUCTURE.md), [final manifest](FINAL_MANIFEST.md), and [SHA-256 checksums](SHA256SUMS.txt).
-
-## EVREN integration and publication
-
-EVREN compatibility code, metadata, a local inference server, a package builder, and a prior ecosystem verification report are included. The prior report records platform/API observations at the time it was run. This consolidation did not upload or publish the model to EVREN. See [EVREN Integration](docs/EVREN_INTEGRATION.md).
 
 ## License
 

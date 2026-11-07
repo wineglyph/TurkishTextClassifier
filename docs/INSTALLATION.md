@@ -33,14 +33,13 @@ Run commands from the repository root so the existing relative artifact paths re
 ```bash
 python src/model/predict.py --text "Siparişim ne zaman kargoya verilir acaba?"
 python src/model/predict.py --text "Ürünün kutusu hasarlı geldi." --json
-python src/model/predict.py --text "Uygulamaya gece modu eklenmesini öneriyorum." --backend pytorch
 ```
 
-The default backend is `sklearn`. The prediction service loads the serialized scikit-learn pipeline and initializes the optional PyTorch state-dict backend.
+The prediction service loads the serialized scikit-learn pipeline.
 
 ## Python API
 
-The legacy module uses a top-level `pipeline` import. This supported import example adds its directory to `sys.path` without editing project source:
+The module uses a top-level `pipeline` import. This supported import example adds its directory to `sys.path` without editing project source:
 
 ```python
 from pathlib import Path
@@ -65,7 +64,7 @@ For a script saved outside this repository, set `PROJECT_ROOT` to the extracted 
 Start the standard-library HTTP server:
 
 ```bash
-python src/evren/serve.py 8080
+python src/serve.py 8080
 ```
 
 Health check:

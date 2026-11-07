@@ -12,13 +12,12 @@
     "name": "TurkishTextClassifier",
     "version": "1.0.0",
     "backend": "sklearn",
-    "inference_method": "TurkishTextClassifierService.predict_batch(texts, backend=\"sklearn\")",
-    "production_entrypoint": "src/model/predict.py::TurkishTextClassifierService.predict_batch; src/evren/serve.py defaults request backend to sklearn",
+    "inference_method": "TurkishTextClassifierService.predict_batch(texts)",
+    "production_entrypoint": "src/model/predict.py::TurkishTextClassifierService.predict_batch; src/serve.py uses this path",
     "primary_artifact": "artifacts/model/turkish_text_classifier.joblib",
     "pipeline": "Pipeline(TfidfVectorizer(preprocessor=preprocess_turkish_text, ngram_range=(1,2), sublinear_tf=True), LogisticRegression(C=2.0, class_weight=\"balanced\", solver=\"lbfgs\"))",
     "confidence_available": true,
-    "confidence_definition": "Maximum class probability from the unchanged production predict() method; values are rounded to 4 decimal places by that method.",
-    "project_also_loads_pytorch_artifact": "artifacts/model/turkish_text_classifier.pt (service initializes it, but default sklearn predictions do not call it)."
+    "confidence_definition": "Maximum class probability from the unchanged production predict() method; values are rounded to 4 decimal places by that method."
   },
   "accuracy": 0.8155555555555556,
   "macro_precision": 0.8180098644682546,
